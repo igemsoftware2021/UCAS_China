@@ -44,6 +44,7 @@ database_file中
 ### develop
 
 请在各自的开发分支进行开发，分支已经搭建：
+[方法请见：链接](https://blog.csdn.net/weixin_43851149/article/details/107283174)
 
 > master
 > |- develop(本人分支)
