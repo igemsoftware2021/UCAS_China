@@ -1,5 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+  },
   "useExtendedLib": {
     "weui": true
   }
