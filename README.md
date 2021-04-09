@@ -58,11 +58,11 @@ database_file中
 
 > master
 
-> |- develop(本人分支)
+> |- develop(gzy分支)
 
-> |- dev_guan(官奕琳分支)
+> |- dev_guan(gyl分支)
 
-> |_ dev_li(李文毅分支)
+> |_ dev_li(lwy分支)
 
 请常使用`微信开发者工具`中`版本管理`中的`git`进行操作，使用方法可以交流
 
