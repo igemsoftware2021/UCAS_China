@@ -1,4 +1,51 @@
 <!--index.wxml-->
 <view class="container">
-  <!--<mp-tabbar style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>-->
+  <view>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="{{src}}"></image>
+  </view>
+
+  <!--当前状态判断-->
+  <view class="state">
+    <!--上一状态/时间->当前状态/时间->下一状态/时间-->
+    <view class="time">
+      <view class="last_time"></view>
+      <view class="cur_time"></view>
+      <view class="next_time"></view>
+    </view>
+    <view class="time_state">
+      <view class="last_state"></view>
+      <view class="cur_state"></view>
+      <view class="next_state"></view>
+    </view>
+  </view>
+
+  <!--咖啡推荐-->
+  <view class="recommend">
+    <!--左推荐量，右产品-->
+    <view class="recom_amount"></view>
+    <view class="recom_product">
+      <!--使用switch开关滑动选择采用何种方式饮用咖啡-->
+      <view class="switch"></view>
+      <!--若使用硬件，则给出图示，包括咖啡类型/倾倒量-->
+      <view class="fig_with_hardware" wx:if=""></view>
+      <!--若非，给出推荐市面产品-->
+      <view class="fig_market" wx:if=""></view>
+    </view>
+  </view>
+
+  <!--对当前推荐评价-->
+  <view class="evaluation">
+    <view class="evaluate_word">请问您对此次推荐是否满意？</view>
+    <!--采取打星的方式-->
+    <view class="evaluate"></view>
+  </view>
+
+  <!--当日咖啡摄取量情况-->
+  <view class="amout">
+    <!--左图+右数字-->
+    <view class="figure"></view>
+    <view class="number">
+      <!--要呈现什么数据-->
+    </view>
+  </view>
 </view>

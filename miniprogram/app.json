@@ -2,10 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/about_us/about_us",
+    "pages/help/help",
     "pages/history/history",
     "pages/home/home",
     "pages/login/login",
-    "pages/record_add/record_add",
+    "pages/record_add/record",
     "pages/routine/routine",
     "pages/setting/setting",
     "pages/user_test/user_test",
@@ -43,7 +44,7 @@
     },
     {
       "text": "记录",
-      "pagePath": "pages/record_add/record_add",
+      "pagePath": "pages/record_add/record",
       "iconPath": "/images/tabbar/record_inactive.png",
       "selectedIconPath": "/images/tabbar/record_active.png"
     },
