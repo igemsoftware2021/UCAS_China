@@ -10,7 +10,25 @@ Page({
     takeSession: false,
     requestResult: '',
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') // 如需尝试获取用户信息可改为false
+    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl'), // 如需尝试获取用户信息可改为false
+    list: [{
+      "text": "推荐",
+      "iconPath": "../../../images/tabbar/coffee_inactive.png",
+      "selectedIconPath": "../../../images/tabbar/coffee_active.png",
+      /*dot: true*/
+    },
+    {
+      "text": "记录",
+      "iconPath": "../../../images/tabbar/record_inactive.png",
+      "selectedIconPath": "../../../images/tabbar/record_active.png",
+      /*badge: 'New'*/
+    },
+    {
+      "text": "个人中心",
+      "iconPath": "../../../images/tabbar/person_inactive.png",
+      "selectedIconPath": "../../../images/tabbar/person_active.png",
+      /*badge: 'New'*/
+    }]
   },
 
   onLoad: function() {

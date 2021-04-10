@@ -11,13 +11,11 @@
 
 `miniprogram/pages`页面：
 
-> index:为一般用户的main界面，数据/评估方法统一采取一般标准，首次打开跳转至login界面
+> index:main界面，数据/评估方法根据用户有无登陆选取一般标准/个性化标准，首次打开跳转至login界面
 
 > login:可选择不登陆继续使用，但无法获得个性服务，首先是微信登陆，若用户注册过跳转到main界面，若未注册则需跳转至填写基本信息表单，然后选择是否记录当天作息作为标准
 
 > user_test:刚注册用户填写基本信息，或与其他检测方式交互
-
-> main:即为咖啡摄取量显示、推荐当前选择界面，需要适当引入图形化表现
 
 > record_add:添加咖啡记录，一种可以通过蓝牙/局域网网络等与硬件数据交互，另一种可以选择所喝咖啡，此处需要数据库
 
@@ -48,7 +46,15 @@ database_file中
 
 - b站：看一点视频
 - [官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)，很不错
-- [weui组件库文档](https://developers.weixin.qq.com/miniprogram/dev/extended/)
+- [weui组件库文档](https://developers.weixin.qq.com/miniprogram/dev/extended/)，已经通过npm的方式导入，并且在`miniprogram`中有其代码文件也可使用，但可能会报错，因此统一推荐在需要导入页面的json文件中使用类似如下的方式
+
+```json
+"usingComponents": {
+    "mp-tabbar": "/miniprogram_npm/weui-miniprogram/tabbar/tabbar"
+  }
+```
+
+使用时请注意，关于引用文件路径必须加入`../../../`才能够回到根目录
 
 基本信息入门可以简要交流
 ### develop

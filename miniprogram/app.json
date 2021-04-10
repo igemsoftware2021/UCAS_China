@@ -1,6 +1,14 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/about_us/about_us",
+    "pages/history/history",
+    "pages/home/home",
+    "pages/login/login",
+    "pages/record_add/record_add",
+    "pages/routine/routine",
+    "pages/setting/setting",
+    "pages/user_test/user_test",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
@@ -15,7 +23,6 @@
     "pages/im/room/room"
   ],
   "useExtendedLib": {
-    "kbone": true,
     "weui": true
   },
   "window": {
@@ -26,5 +33,25 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "style": "v2",
+  "tabBar": {
+    "list": [{
+      "text": "推荐",
+      "pagePath": "pages/index/index",
+      "iconPath": "/images/tabbar/coffee_inactive.png",
+      "selectedIconPath": "/images/tabbar/coffee_active.png"
+    },
+    {
+      "text": "记录",
+      "pagePath": "pages/record_add/record_add",
+      "iconPath": "/images/tabbar/record_inactive.png",
+      "selectedIconPath": "/images/tabbar/record_active.png"
+    },
+    {
+      "text": "个人中心",
+      "pagePath": "pages/home/home",
+      "iconPath": "/images/tabbar/person_inactive.png",
+      "selectedIconPath": "/images/tabbar/person_active.png"
+    }]
+  }
 }
