@@ -15,21 +15,15 @@
   </view>
 
   <!--一系列navigator-->
-  <view class="navigator_group">
-    <navigator url="/pages/setting/setting" hover-class="navigator-hover" class="navigator_part">
-      <view class="word-container"><text class="navigator-text">设置</text></view>
-    </navigator>
-    <navigator url="/pages/history/history" hover-class="navigator-hover" class="navigator_part">
-      <view class="word-container"><text class="navigator-text">咖啡饮用分析</text></view>
-    </navigator>
-    <navigator url="/pages/routine/routine" hover-class="navigator-hover" class="navigator_part">
-      <view class="word-container"><text class="navigator-text">日常习惯</text></view>
-    </navigator>
-    <navigator url="/pages/help/help" hover-class="navigator-hover" class="navigator_part">
-      <view class="word-container"><text class="navigator-text">帮助</text></view>
-    </navigator>
-    <navigator url="/pages/about_us/about_us" hover-class="navigator-hover" class="navigator_part">
-      <view class="word-container"><text class="navigator-text">关于我们</text></view>
-    </navigator>
+  <view class="navigator-group">
+    <view class="naviagte-item" wx:for="{{naviagte_content}}" wx:key="id" wx:for-index="idx" wx:for-item="item">
+      <navigator url="{{item.url}}" hover-class="navigator-hover" class="navigator-part" bindtap="tap" data-id="{{item.id}}">
+        <view class="icon">
+          <image class="icon-img" src="{{item.active==0?item.figure_inactive:item.figure_active}}">
+          </image>
+        </view>
+        <view class="word-container"><text class="navigator-text">{{item.text}}</text></view>
+      </navigator>
+    </view>
   </view>
 </view>

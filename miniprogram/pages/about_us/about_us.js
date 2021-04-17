@@ -9,7 +9,19 @@ Page({
     takeSession: false,
     requestResult: '',
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') // 如需尝试获取用户信息可改为false
+    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl'), // 如需尝试获取用户信息可改为false
+    figures:[
+      {
+        id:0,
+        src:'/images/about/igem.jpeg',
+        url:'https://2021.igem.org/Main_Page'
+      },
+      {
+        id:1,
+        src:'/images/about/ucas.jpeg',
+        url:'https://2021.igem.org/Team:UCAS-China'
+      }
+    ]
   },
 
   onLoad: function() {

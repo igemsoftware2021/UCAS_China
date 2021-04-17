@@ -10,7 +10,56 @@ Page({
     takeSession: false,
     requestResult: '',
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') // 如需尝试获取用户信息可改为false
+    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl'), // 如需尝试获取用户信息可改为false
+    naviagte_content:[
+      {
+        id:0,
+        text:'设置',
+        url:'/pages/setting/setting',
+        active:0,
+        figure_active:'/images/home/setting_active.png',
+        figure_inactive:'/images/home/setting_inactive.png'
+      },{
+        id:1,
+        text:'咖啡饮用分析',
+        url:'/pages/history/history',
+        active:0,
+        figure_active:'/images/home/coffee_active.png',
+        figure_inactive:'/images/home/coffee_inactive.png'
+      },{
+        id:2,
+        text:'日常习惯',
+        url:'/pages/routine/routine',
+        active:0,
+        figure_active:'/images/home/custom_active.png',
+        figure_inactive:'/images/home/custom_inactive.png'
+      },{
+        id:3,
+        text:'帮助',
+        url:'/pages/help/help',
+        active:0,
+        figure_active:'/images/home/help_active.png',
+        figure_inactive:'/images/home/help_inactive.png'
+      },{
+        id:4,
+        text:'关于我们',
+        url:'/pages/about_us/about_us',
+        active:0,
+        figure_active:'/images/home/about_active.png',
+        figure_inactive:'/images/home/about_inactive.png'
+      }
+      ]
+  },
+
+
+  tap:function(e){
+    console.log(e)
+    var index = e.currentTarget.dataset.id;
+    var that=this
+    var ac=that.data.naviagte_content[index].active
+    that.setData({
+      ac:1
+    })
   },
 
   onLoad: function() {

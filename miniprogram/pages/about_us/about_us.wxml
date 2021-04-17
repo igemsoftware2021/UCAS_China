@@ -1,4 +1,15 @@
 <!--index.wxml-->
 <view class="container">
-  <view class=""></view>
+  <view class="figure-scroll">
+    <swiper class="figure-swiper" autoplay="true" circular="true">
+      <navigator wx:for="{{figures}}" wx:key="id" class="image-nav" url="{{item.url}}">
+        <swiper-item>
+          <view class="image-view">
+            <image src="{{item.src}}" mode="aspectFit" class="image">
+            </image>
+          </view>
+        </swiper-item>
+      </navigator>
+    </swiper>
+  </view>
 </view>

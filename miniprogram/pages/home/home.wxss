@@ -1,19 +1,19 @@
 /**index.wxss**/
 
 page {
-  background: #bee6d9af;
+  background: #dbdadaef;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.navigator_group{
+.navigator-group{
   height: 70vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-
-.navigator_part{
+.naviagte-item{
   background-color: white;
   flex:1 1 auto;
   display: flex;
@@ -29,9 +29,26 @@ page {
   border-bottom-color: rgba(245, 235, 181, 0.281);
   border-radius: 20px;
 }
+.navigator-part{
+  height: 100%;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
 .navigator-hover{
-  background-image: url("https://clubimg.club.vmall.com/data/attachment/forum/201912/15/205640mpavrakih9jlrciz.jpg");
-  background-size: 80vw;
+  background-color: rgb(191, 243, 3);
+}
+.icon{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.icon-img{
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
 }
 .word-container{
   display: flex;
