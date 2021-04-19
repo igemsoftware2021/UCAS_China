@@ -1,0 +1,66 @@
+<view class="container">
+  <view>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+  </view>
+
+
+  <view class="num">
+    <view class="num-text">
+      <text class="num-text-text">当前咖啡摄入量最佳范围：</text>
+    </view>
+    <view class="num-number">
+      <text class="num-number-text">{{coffee_bestscale_up}}~{{coffee_bestscale_low}}</text>
+    </view>
+  </view>
+
+  <view class="drink">
+    <radio-group>
+      <label class="radio">
+        <view class="out-buy" wx:if="{{can_buy==1}}">
+          <view class="head-item">
+            <view class="head-left-item">
+                <radio value="0"></radio>
+              <text class="head-left-text">选择市场咖啡产品</text>
+            </view>
+            <view class="head-right-item">
+              <navigator class="head-right-nav" url="../out_coffee/out_coffee"><text class="head-right-text">>>更多选择</text></navigator>
+            </view>
+          </view>
+          
+          <view class="coffee-pic">
+            <swiper class="coffee-items" autoplay="false" circular="true" indicator-dots="true">
+              <navigator wx:for="{{market_coffee}}" url="../web_view/web_view?src={{item.url}}">
+                <swiper-item>
+                  <view class="coffee-pic-item">
+                    <image class="pic" src="{{item.pic-src}}">
+                    </image>
+                    <view class="description">
+                      <text class="text">咖啡容量:{{item.contain}};咖啡因含量:{{item.caffein}}\n单价:{{item.price}}</text>
+                    </view>
+                  </view>
+                </swiper-item>
+              </navigator>
+            </swiper>
+          </view>
+        </view>
+      </label>
+
+      <view class="div"></view>
+
+      <label class="radio">
+        <radio>
+          <view class="coffee-in-drink">
+            <view class=""></view>
+          </view>
+        </radio>
+      </label>
+    </radio-group>
+  </view>
+
+  <!--对当前推荐评价-->
+  <view class="evaluation">
+    <view class="evaluate_word">请问您对此次推荐是否满意？</view>
+    <!--采取打星的方式-->
+    <view class="evaluate"></view>
+  </view>
+</view>

@@ -10,10 +10,17 @@ Page({
     takeSession: false,
     requestResult: '',
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') // 如需尝试获取用户信息可改为false
+    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl'),
+    
+    src:''
   },
 
-  onLoad: function() {
+
+  onLoad: function(options) {
+    var that=this
+    that.setData({
+      src:options.src
+    })
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',

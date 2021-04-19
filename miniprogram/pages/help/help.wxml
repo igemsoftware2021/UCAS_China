@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="head">
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+  </view>
+  <view class="title">
+    <text class="title-text">帮助</text>
+  </view>
+  <view class="part">
+    <view class="subtitle">
+      <text class="subtitle-text">推荐页面</text>
+    </view>
+    <view class="div-line"></view>
+    <view class="help-text">
+      <text></text>
+    </view>
+  </view>
+  <view class="part">
+    <view class="subtitle">
+      <text class="subtitle-text">记录页面</text>
+    </view>
+    <view class="div-line"></view>
+    <view class="help-text">
+      <text></text>
+    </view>
+  </view>
+</view>

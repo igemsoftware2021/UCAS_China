@@ -19,23 +19,10 @@
     </view>
   </view>
 
-  <!--咖啡推荐-->
-  <view class="recommend">
-    <!--左推荐量，右产品-->
-    <view class="recom_amount"></view>
-    <view class="recom_product">
-      <!--使用switch开关滑动选择采用何种方式饮用咖啡-->
-      <view class="switch"></view>
-      <!--若使用硬件，则给出图示，包括咖啡类型/倾倒量-->
-      <view class="fig_with_hardware" wx:if=""></view>
-      <!--若非，给出推荐市面产品-->
-      <view class="fig_market" wx:if=""></view>
-    </view>
-  </view>
 
-  <!--对当前推荐评价-->
+  <!--对当前计算评价-->
   <view class="evaluation">
-    <view class="evaluate_word">请问您对此次推荐是否满意？</view>
+    <view class="evaluate_word">请问您对此次计算是否满意？</view>
     <!--采取打星的方式-->
     <view class="evaluate"></view>
   </view>

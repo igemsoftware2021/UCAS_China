@@ -6,7 +6,7 @@
     "pages/history/history",
     "pages/home/home",
     "pages/login/login",
-    "pages/record_add/record",
+    "pages/record/record",
     "pages/routine/routine",
     "pages/setting/setting",
     "pages/user_test/user_test",
@@ -20,8 +20,11 @@
     "pages/openapi/serverapi/serverapi",
     "pages/openapi/callback/callback",
     "pages/openapi/cloudid/cloudid",
+    "pages/out_coffee/out_coffee",
+    "pages/coffee_detail/coffee_detail",
     "pages/im/im",
-    "pages/im/room/room"
+    "pages/im/room/room",
+    "pages/web_view/web_view"
   ],
   "useExtendedLib": {
     "weui": true
@@ -37,16 +40,16 @@
   "style": "v2",
   "tabBar": {
     "list": [{
-      "text": "推荐",
-      "pagePath": "pages/index/index",
-      "iconPath": "/images/tabbar/coffee_inactive.png",
-      "selectedIconPath": "/images/tabbar/coffee_active.png"
-    },
-    {
       "text": "记录",
-      "pagePath": "pages/record_add/record",
+      "pagePath": "pages/index/index",
       "iconPath": "/images/tabbar/record_inactive.png",
       "selectedIconPath": "/images/tabbar/record_active.png"
+    },
+    {
+      "text": "推荐",
+      "pagePath": "pages/record/record",
+      "iconPath": "/images/tabbar/coffee_inactive.png",
+      "selectedIconPath": "/images/tabbar/coffee_active.png"
     },
     {
       "text": "个人中心",
