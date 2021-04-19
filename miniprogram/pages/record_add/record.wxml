@@ -1,5 +1,0 @@
-<view class="container">
-  <view>
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
-  </view>
-</view>
