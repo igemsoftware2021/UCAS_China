@@ -5,6 +5,7 @@
     "pages/help/help",
     "pages/history/history",
     "pages/home/home",
+    "pages/health/health",
     "pages/login/login",
     "pages/record/record",
     "pages/routine/routine",
@@ -50,6 +51,12 @@
       "pagePath": "pages/record/record",
       "iconPath": "/images/tabbar/coffee_inactive.png",
       "selectedIconPath": "/images/tabbar/coffee_active.png"
+    },
+    {
+      "text": "健康",
+      "pagePath": "pages/health/health",
+      "iconPath": "/images/tabbar/health_inactive.png",
+      "selectedIconPath": "/images/tabbar/health_active.png"
     },
     {
       "text": "个人中心",

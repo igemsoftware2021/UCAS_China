@@ -19,7 +19,7 @@
         <view class="out-buy" wx:if="{{can_buy==1}}">
           <view class="head-item">
             <view class="head-left-item">
-                <radio value="0"></radio>
+                <radio value="{{choice}}"></radio>
               <text class="head-left-text">选择市场咖啡产品</text>
             </view>
             <view class="head-right-item">
