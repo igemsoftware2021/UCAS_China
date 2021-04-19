@@ -29,7 +29,7 @@
           
           <view class="coffee-pic">
             <swiper class="coffee-items" autoplay="false" circular="true" indicator-dots="true">
-              <navigator wx:for="{{market_coffee}}" url="../web_view/web_view?src={{item.url}}">
+              <navigator wx:for="{{market_coffee}}" wx:key="id" url="../web_view/web_view?src={{item.url}}">
                 <swiper-item>
                   <view class="coffee-pic-item">
                     <image class="pic" src="{{item.pic-src}}">

@@ -20,6 +20,24 @@
   </view>
 
 
+  <view class="recom-amount">
+    <view class="recom-head">
+      <text class="recom-head-text">
+        推荐您饮用：
+      </text>
+    </view>
+    <view class="recom-num">
+      <text class="recom-num-text">
+        {{recom_amount}}
+      </text>
+    </view>
+    <view class="recom-foot">
+      <text class="recom-foot-text">
+        咖啡因
+      </text>
+    </view>
+  </view>
+
   <!--对当前计算评价-->
   <view class="evaluation">
     <view class="evaluate_word">请问您对此次计算是否满意？</view>

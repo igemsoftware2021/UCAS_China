@@ -7,7 +7,7 @@
     "pages/home/home",
     "pages/health/health",
     "pages/login/login",
-    "pages/record/record",
+    "pages/recommand/recommand",
     "pages/routine/routine",
     "pages/setting/setting",
     "pages/user_test/user_test",
@@ -48,7 +48,7 @@
     },
     {
       "text": "推荐",
-      "pagePath": "pages/record/record",
+      "pagePath": "pages/recommand/recommand",
       "iconPath": "/images/tabbar/coffee_inactive.png",
       "selectedIconPath": "/images/tabbar/coffee_active.png"
     },
