@@ -1,0 +1,80 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+  <view class="user">
+    <view class="avata">
+      <image class="avata-img" src="{{avatarUrl}}"></image>
+    </view>
+    <view class="name-welcome">
+      {{userInfo.nickName}}，欢迎
+    </view>
+  </view>
+  <view class="fill-table">
+    <mp-toptips msg="{{error}}" type="error" show="{{error}}"></mp-toptips>
+    <view class="forms">
+      <view class="title">
+        简要信息填写
+      </view>
+      <view class="description">
+        一部分是用户基本信息，另一部分为我们设计的算法/模型需要一些关于您的简要信息作为参数输入，它们帮助很大，利于形成相当精准的模型
+      </view>
+      <mp-form id="form" rules="{{rules}}" models="{{formData}}">
+        <mp-cells class="cell" wx:for="{{form_content}}" wx:key="index" prop="{{item.prop}}" title="{{item.title}}"
+          ext-class="">
+          <input bindinput="formInputChange" data-field="{{item.prop}}" class="weui-input"
+            placeholder="{{item.placeholder}}" />
+        </mp-cells>
+        <mp-cells title="人种">
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPeopleChange" value="{{peopleIndex}}" range="{{people}}">
+              <view class="weui-select weui-select_in-select-after">{{people[peopleIndex]}}</view>
+            </picker>
+          </view>
+        </mp-cells>
+        <view class="choices">
+          <mp-cells title="性别">
+            <mp-checkbox-group prop="radio" multi="{{false}}" bindchange="genderChange">
+              <mp-checkbox wx:for="{{gender}}" wx:key="value" label="{{item.name}}" value="{{item.value}}"
+                checked="{{item.checked}}"></mp-checkbox>
+            </mp-checkbox-group>
+          </mp-cells>
+          <mp-cells title="是否曾患肝脏疾病">
+            <mp-checkbox-group prop="radio" multi="{{false}}" bindchange="liverChange">
+              <mp-checkbox wx:for="{{liver}}" wx:key="value" label="{{item.name}}" value="{{item.value}}"
+                checked="{{item.checked}}"></mp-checkbox>
+            </mp-checkbox-group>
+          </mp-cells>
+          <view class="weui-cells__title" wx:if="{{liver_fill}}">若有，请填写具体疾病</view>
+          <view class="weui-cells weui-cells_after-title" wx:if="{{liver_fill}}">
+            <view class="weui-cell">
+              <view class="weui-cell__bd">
+                <input class="weui-input" placeholder="请输入疾病名称" />
+              </view>
+            </view>
+          </view>
+        </view>
+        <mp-cells title="请滑动滑块选择吸烟频繁度">
+          <view class="body-view">
+            <slider bindchange="sliderchange" left-icon="cancel" right-icon="success_no_circle" />
+          </view>
+        </mp-cells>
+
+        <checkbox-group bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{agree}}">
+                      <view class="weui-agree__checkbox-icon">
+                          <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{agree}}"></icon>
+                      </view>
+                    </checkbox>
+                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                </view>
+            </label>
+        </checkbox-group>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+        </view>
+      </mp-form>
+    </view>
+  </view>
+</view>

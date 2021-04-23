@@ -7,3 +7,14 @@ page {
   justify-content: flex-start;
 }
 
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.login-btn{
+  width: 100vh;
+}
+.login-button{
+  width: 100%;
+}

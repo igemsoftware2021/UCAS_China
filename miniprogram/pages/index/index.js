@@ -3,6 +3,7 @@ const app = getApp()
 
 Page({
   data: {
+    showActionsheet: true,
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     hasUserInfo: false,
@@ -29,10 +30,13 @@ Page({
       "selectedIconPath": "../../../images/tabbar/person_active.png",
       /*badge: 'New'*/
     }],
-    src:"../../images/topimage/cafe.jpeg"
+    src:"../../images/topimage/cafe.jpeg",
+    openid:'',
+    session:'',
+    indatabase:false,
   },
 
-  onLoad: function() {
+  onLoad: function(options) {
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
@@ -44,21 +48,108 @@ Page({
         canIUseGetUserProfile: true,
       })
     }
+    /*if(options.data.hasUserInfo==1){
+      this.setData({
+        hasUserInfo:1
+      })
+    }*/
+    console.log(options)
   },
 
   getUserProfile() {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
     wx.getUserProfile({
-      desc: '展示用户信息', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+      desc: '将为您提供个性化方案', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
       success: (res) => {
         this.setData({
           avatarUrl: res.userInfo.avatarUrl,
           userInfo: res.userInfo,
           hasUserInfo: true,
         })
+        app.globalData.userInfo =this.data.userInfo
+        app.globalData.hasUserInfo=this.data.hasUserInfo
+        app.globalData.canIUseGetUserProfile=this.data.canIUseGetUserProfile
+        app.globalData.avatarUrl=this.data.avatarUrl
+        app.globalData.userInfo=this.data.userInfo
+        console.log(app.globalData.avatarUrl)
+
+        wx.login({
+          success: res => {
+            // 发送 res.code 到后台换取 openId, sessionKey
+            if(res.code){
+              console.log(res.code)
+              wx.request({
+                url: 'https://api.weixin.qq.com/sns/jscode2session',//微信服务器获取appid的网址 不用变
+                method:'post',//必须是post方法
+                data:{
+                  js_code:res.code,
+                  appid:'wx24a0bdcd804e5c51',//仅为实例appid
+                  secret:'6a62081d1c40b41081ac06a882f2de10',//仅为实例secret
+                  grant_type:'authorization_code'
+                },
+                header: {
+                  'content-type': 'application/x-www-form-urlencoded',
+                },
+                success:function(response){
+                  console.log(response.data)
+                  wx.setStorageSync('app_openid', response.data.openid); //将openid存入本地缓存
+                  wx.setStorageSync('sessionKey', response.data.session_key)//将session_key 存入本地缓存命名为SessionKey
+                }
+              })
+            }else{
+              console.log("登陆失败");
+            }
+          }
+        })
+        var that = this  //早success里面不能使用this 因为 success 是回调函数 它会不停的检测是否成功，因此在不断回调的过程中this的指向就发生了变化
+        var storageData = wx.getStorageSync('app_openid')
+        console.log('storageData', storageData);
+        this.setData({
+          openid:storageData
+        });
+        storageData = wx.getStorageSync('sessionKey')
+        console.log('storageData', storageData);
+        this.setData({
+          session:storageData
+        });
+    
+        console.log(this.data.openid)
+        app.globalData.openid=this.data.openid
+        app.globalData.session=this.data.session
+        const db = wx.cloud.database()
+        db.collection('users').where({
+          _openid:this.data.openid
+        }).get({
+          success: function(res) {
+            console.log(res.data)
+            this.setData({
+              indatabase:true
+            })
+            app.globalData.indatabase=this.data.indatabase
+          }
+        })
+        if(this.data.indatabase==false){
+          wx.navigateTo({
+            url: '../register/register',
+            events: {
+              // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
+              acceptDataFromOpenedPage: function(data) {
+                console.log(data)
+              },
+              someEvent: function(data) {
+                console.log(data)
+              }
+            },
+            success: function(res) {
+              // 通过eventChannel向被打开页面传送数据
+              //res.eventChannel.emit('acceptDataFromOpenerPage', { data: this.data.openid })
+            }
+          })
+        }
       }
     })
   },
+  
 
   onGetUserInfo: function(e) {
     if (!this.data.logged && e.detail.userInfo) {
@@ -68,6 +159,10 @@ Page({
         userInfo: e.detail.userInfo,
         hasUserInfo: true,
       })
+      app.globalData.userInfo =this.data.userInfo
+      app.globalData.hasUserInfo=this.data.hasUserInfo
+      app.globalData.canIUseGetUserProfile=this.data.canIUseGetUserProfile
+      console.log(this.data.userInfo)
     }
   },
 

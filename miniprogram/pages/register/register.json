@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "注册界面",
+  "usingComponents": {
+    "mp-toptips": "weui-miniprogram/toptips/toptips",
+    "mp-form-page": "weui-miniprogram/form-page/form-page",
+    "mp-form": "weui-miniprogram/form/form",
+    "mp-cells": "weui-miniprogram/cells/cells",
+    "mp-cell": "weui-miniprogram/cell/cell",
+    "mp-checkbox-group": "weui-miniprogram/checkbox-group/checkbox-group",
+    "mp-checkbox": "weui-miniprogram/checkbox/checkbox",
+    "mp-slideview": "weui-miniprogram/slideview/slideview",
+    "mp-uploader": "weui-miniprogram/uploader/uploader"
+  }
+}

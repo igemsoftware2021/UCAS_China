@@ -4,6 +4,9 @@
     <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="{{src}}"></image>
   </view>
 
+  <view class="login-btn" wx:if="{{hasUserInfo}}==false">
+    <button class="login-button" type="primary" plain="true" style="width:80vw" bindtap="getUserProfile">登陆以为您量身定制</button>
+  </view>
   <!--当前状态判断-->
   <view class="state">
     <!--上一状态/时间->当前状态/时间->下一状态/时间-->
@@ -38,6 +41,9 @@
     </view>
   </view>
 
+  <view class="navigate">
+    <button class="login-button" type="primary" plain="true" style="width:80vw" bindtap="getUserProfile">前往查看饮品</button>
+  </view>
   <!--对当前计算评价-->
   <view class="evaluation">
     <view class="evaluate_word">请问您对此次计算是否满意？</view>
