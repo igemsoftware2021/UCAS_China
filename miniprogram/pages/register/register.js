@@ -72,7 +72,8 @@ Page({
     }, {
         name: 'agree',
         rules: {required: true, message: '请勾选同意隐私政策'},
-    }]
+    }],
+    btn_disabled:true,
   },
 
   genderChange(e) {
@@ -151,8 +152,18 @@ Page({
   },
   bindAgreeChange: function (e) {
       this.setData({
-          agree: !!e.detail.value.length
+          agree: e.detail.value.length
       });
+      if (e.detail.value.length==1){
+       this.setData({
+         btn_disabled:false,
+       })
+     }else{
+        console.log(e.detail.value.length)
+       this.setData({
+         btn_disabled:true
+       })
+     }
   },
   submitForm() {
     this.selectComponent('#form').validate((valid, errors) => {

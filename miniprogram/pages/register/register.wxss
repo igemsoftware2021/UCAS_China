@@ -1,1 +1,6 @@
 /* pages/register/register.wxss */
+
+.checkbox{
+  display: flex;
+  flex-direction: row;
+}

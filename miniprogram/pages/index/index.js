@@ -151,6 +151,11 @@ Page({
   },
   
 
+  switchTab(){
+    wx.switchTab({
+      url: '../recommand/recommand',
+    })
+  },
   onGetUserInfo: function(e) {
     if (!this.data.logged && e.detail.userInfo) {
       this.setData({

@@ -58,21 +58,18 @@
           </view>
         </mp-cells>
 
-        <checkbox-group bindchange="bindAgreeChange">
-            <label class="weui-agree" for="weuiAgree">
-                <view class="weui-agree__text">
-                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{agree}}">
-                      <view class="weui-agree__checkbox-icon">
-                          <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{agree}}"></icon>
-                      </view>
-                    </checkbox>
-                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
-                </view>
-            </label>
-        </checkbox-group>
+
+        <label class="checkbox">
+          <checkbox-group bindchange="bindAgreeChange">
+            <view class="checkbox">
+              <checkbox value="agree" checked="{{agree}}" />
+              我已阅读并同意<navigator url="../privacy/privacy" style='color:#CCAE73' class="weui-agree__link">《相关条款》</navigator>
+            </view>
+          </checkbox-group>
+        </label>
 
         <view class="weui-btn-area">
-            <button class="weui-btn" type="primary" bindtap="submitForm">确定</button>
+          <button class="weui-btn" type="primary" bindtap="submitForm" disabled='{{btn_disabled}}'>确定提交</button>
         </view>
       </mp-form>
     </view>

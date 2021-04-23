@@ -5,7 +5,8 @@
   </view>
 
   <view class="login-btn" wx:if="{{hasUserInfo}}==false">
-    <button class="login-button" type="primary" plain="true" style="width:80vw" bindtap="getUserProfile">登陆以为您量身定制</button>
+    <button class="login-button" type="primary" plain="true" style="width:80vw"
+      bindtap="getUserProfile">登陆以为您量身定制</button>
   </view>
   <!--当前状态判断-->
   <view class="state">
@@ -42,7 +43,8 @@
   </view>
 
   <view class="navigate">
-    <button class="login-button" type="primary" plain="true" style="width:80vw" bindtap="getUserProfile">前往查看饮品</button>
+      <button class="login-button" type="primary" plain="true" style="width:80vw" disabled="{{hasUserInfo}}" bindtap="switchTab"
+        >前往查看饮品</button>
   </view>
   <!--对当前计算评价-->
   <view class="evaluation">
