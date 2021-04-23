@@ -9,6 +9,7 @@ App({
     session:'',
     avatarUrl:'',
     userInfo:'',
+    caffein:''
   },
 
   onLaunch: function () {
