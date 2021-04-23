@@ -14,7 +14,7 @@
 
 参考”华为Health“的<font color=#aa0a00>卡片式</font>UI设计
 
-![整体UI](miniprogram\整体UI.jpg)
+![整体UI](miniprogram/整体UI.jpg)
 
 
 
@@ -28,7 +28,7 @@
 
 - 饮用剂量
 
-  ![咖啡记录](miniprogram\咖啡记录.jpg)
+  ![咖啡记录](miniprogram/咖啡记录.jpg)
 
 #### 2.咖啡因相关
 
@@ -54,7 +54,7 @@
 
 
 
-![睡眠](miniprogram\睡眠.jpg)
+![睡眠](miniprogram/睡眠.jpg)
 
 #### 2.建议类数据
 
@@ -92,7 +92,7 @@
 
 根据危险心率(过高、过低)提供心率建议
 
-![心率](miniprogram\心率.jpg)
+![心率](miniprogram/心率.jpg)
 
 
 
