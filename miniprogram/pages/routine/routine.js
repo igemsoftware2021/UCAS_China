@@ -36,10 +36,10 @@ Page({
   },
   onSubmit:function(e){
     wx.setStorage({
-      data:routineData,
-      key:routineData,
+      data:'routineData',
+      key:'this.data.routineData',
     })
-    console.log(routineData)
+    console.log(this.data.routineData)
     //存储了数据，不知到时候是否需要跳转到算法结果页面
   },
 })
