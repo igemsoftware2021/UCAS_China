@@ -1,0 +1,32 @@
+.stars{
+  padding:85rpx 0 60rpx 273rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.stars image{
+  width: 190rpx;
+  height: 190rpx;
+  border: 1rpx solid #000;
+  position: absolute;
+  display: inline-block;
+  top: 41rpx;
+  left: 36rpx;
+}
+.stars .content view{
+  font-size: 32rpx;
+  color: #4a4a4a;
+}
+.stars .content>view:last-of-type{
+  height: 40rpx;
+  margin-top: 48rpx;
+}
+.stars .content>view:last-of-type view{
+  float: left;
+  width: 42rpx;
+  height: 42rpx;
+  margin-right: 25rpx;
+  background-size: 100% 100%;
+}
+.submit{
+  background-color: beige;
+}

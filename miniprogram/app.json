@@ -25,7 +25,8 @@
     "pages/coffee_detail/coffee_detail",
     "pages/im/im",
     "pages/im/room/room",
-    "pages/web_view/web_view"
+    "pages/web_view/web_view",
+    "pages/feedback/feedback"
   ],
   "useExtendedLib": {
     "weui": true
