@@ -47,6 +47,13 @@ Page({
         active:0,
         figure_active:'/images/home/about_active.png',
         figure_inactive:'/images/home/about_inactive.png'
+      },{
+        id:5,
+        text:'评分与反馈',
+        url:'/pages/feedback/feedback',
+        active:0,
+        figure_active:'/images/home/feedback_active.png',
+        figure_inactive:'/images/home/feedback_inactive.png'
       }
       ]
   },
