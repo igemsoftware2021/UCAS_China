@@ -1,0 +1,38 @@
+
+<view class="container">
+  <form action="submit" bindsubmit="onSubmit">
+ <!--标题，可能可以配个图-->
+    <view class="title">
+      <text>日常习惯填写</text>
+     </view>
+ <!--表格主体-->
+    <view class="table-body">
+      <!--一个问题和其对应的选项-->
+      <view class="question">
+        1.每日睡眠时间
+      </view>
+      <view class="optionarea">
+        <radio-group class="matters" bindchange="sleepChange">
+          <radio wx:for-items="{{sleepTime}}" wx:key="name" class="options" value="{{item.value}}" checked="{{item.checked}}">
+            <text>{{item.name}}</text>
+          </radio>
+        </radio-group>
+      </view>
+    </view>
+      <!--一个问题和其对应的选项-->
+    <view class="question">
+      2.每日运动时间
+    </view>
+    <view class="optionarea">
+      <radio-group class="matters" bindchange="sportChange">
+        <radio wx:for-items="{{sportTime}}" wx:key="name" class="options" value="{{item.value}}" checked="{{item.checked}}">
+          <text>{{item.name}}</text>
+        </radio>
+      </radio-group>
+    </view>
+    <!--提交按钮-->
+    <view class="Buttom">
+      <button class="submit" form-type="submit">提交</button>
+    </view>
+  </form>
+</view>
