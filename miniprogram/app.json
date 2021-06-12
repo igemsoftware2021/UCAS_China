@@ -23,9 +23,8 @@
     "pages/out_coffee/out_coffee",
     "pages/privacy/privacy",
     "pages/coffee_detail/coffee_detail",
-    "pages/im/im",
-    "pages/im/room/room",
-    "pages/web_view/web_view"
+    "pages/web_view/web_view",
+    "pages/feedback/feedback"
   ],
   "useExtendedLib": {
     "weui": true
@@ -40,29 +39,31 @@
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "tabBar": {
-    "list": [{
-      "text": "记录",
-      "pagePath": "pages/index/index",
-      "iconPath": "/images/tabbar/record_inactive.png",
-      "selectedIconPath": "/images/tabbar/record_active.png"
-    },
-    {
-      "text": "推荐",
-      "pagePath": "pages/recommand/recommand",
-      "iconPath": "/images/tabbar/coffee_inactive.png",
-      "selectedIconPath": "/images/tabbar/coffee_active.png"
-    },
-    {
-      "text": "健康",
-      "pagePath": "pages/health/health",
-      "iconPath": "/images/tabbar/health_inactive.png",
-      "selectedIconPath": "/images/tabbar/health_active.png"
-    },
-    {
-      "text": "个人中心",
-      "pagePath": "pages/home/home",
-      "iconPath": "/images/tabbar/person_inactive.png",
-      "selectedIconPath": "/images/tabbar/person_active.png"
-    }]
+    "list": [
+      {
+        "text": "记录",
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/tabbar/record_inactive.png",
+        "selectedIconPath": "/images/tabbar/record_active.png"
+      },
+      {
+        "text": "推荐",
+        "pagePath": "pages/recommand/recommand",
+        "iconPath": "/images/tabbar/coffee_inactive.png",
+        "selectedIconPath": "/images/tabbar/coffee_active.png"
+      },
+      {
+        "text": "健康",
+        "pagePath": "pages/health/health",
+        "iconPath": "/images/tabbar/health_inactive.png",
+        "selectedIconPath": "/images/tabbar/health_active.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/home/home",
+        "iconPath": "/images/tabbar/person_inactive.png",
+        "selectedIconPath": "/images/tabbar/person_active.png"
+      }
+    ]
   }
 }

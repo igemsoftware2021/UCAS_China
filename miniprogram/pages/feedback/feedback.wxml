@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='stars'>
+    <image src='../../images/home/user.png'></image>
+    <view class='content'>
+      <view>评分</view>
+      <view>
+        <view wx:for="{{stars}}" wx:key="index" style='background:url("{{item.flag==1?item.bgImg:item.bgfImg}}") no-repeat top; background-size:100%;' data-index="{{index}}" bindtap='score'></view>
+      </view>
+      <block>{{index}}星</block>
+    </view>
+  </view>
+  <form bindsubmit='bindFormsubmit'>
+        <textarea bindconfirm="confirm" placeholder="欢迎您提出任何对我们小程序或项目的建议，我们会继续不断改进ヾ(◍°∇°◍)ﾉﾞ" auto-focus='true' name="textarea" />
+        <button  class="submit" form-type='submit'>提交</button>
+  </form>
+</view>

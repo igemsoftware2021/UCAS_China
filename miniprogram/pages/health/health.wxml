@@ -1,2 +1,20 @@
 <!--pages/health/health.wxml-->
 
+<view class="container">
+  <view>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+  </view>
+  <text>健康·HEALTH</text>
+  <text>Coffee gets me excited.</text>
+  <view class="navigator-group">
+    <view class="naviagte-item" wx:for="{{naviagte_content}}" wx:key="id" wx:for-index="idx" wx:for-item="item">
+      <navigator url="{{item.url}}" hover-class="navigator-hover" class="navigator-part" bindtap="tap" data-id="{{item.id}}">
+        <view class="icon">
+          <image class="icon-img" src="{{item.active==0?item.figure_inactive:item.figure_active}}">
+          </image>
+        </view>
+        <view class="word-container"><text class="navigator-text">{{item.text}}</text></view>
+      </navigator>
+    </view>
+  </view>
+</view>
