@@ -95,6 +95,66 @@ database_file中
 使用时请注意，关于引用文件路径必须加入`../../../`才能够回到根目录
 
 基本信息入门可以简要交流
+
+
+
+### 工具
+
+#### 绘图工具wx-charts
+
+微信小程序图表工具，charts for WeChat small app
+
+基于canvas绘制
+
+#### 当前框架支持
+
+- 饼图   `pie`
+
+- 圆环图 `ring`
+
+- 线图   `line`
+
+- 柱状图 `column`
+
+- 区域图 `area`
+
+- 雷达图 `radar`
+
+  （此框架感谢@[xiaolin](https://github.com/xiaolin3303/wx-charts) ）
+
+#### 使用方法
+
+**Step1：**
+
+在`.js`文件中添加如下代码
+
+```json
+// 路径是wxCharts文件相对于本文件的相对路径
+// 框架代码已放在主目录下dist文件夹内
+var wxCharts = require('../../dist/wxcharts.js');
+Page({
+    ...
+    onLoad: function() {
+        new wxCharts({
+            ...
+            //在这里对需要用到的chart进行描述
+        });
+    }
+});
+```
+
+**Step2：**
+
+在`.wxml`文件中定义canvas，例如：
+
+```html
+<canvas canvas-id="pieCanvas" disable-scroll="true" class="pieCanvas" style="width:300px; height:300px;"></canvas>
+```
+
+**canvas-id** 表示图表类型要与 `.js`文件中new wxCharts({canvasId: ''}) 中的 canvasId 一致。
+
+
+
 ### develop
 
 请在各自的开发分支进行开发，分支已经搭建：
@@ -145,3 +205,6 @@ database_file中
 推荐机制，需要根据先前文献+HP（收集数据）+建模 得出更权威、准确的算法与调整方法
 
 用户反馈调节
+
+### 
+
