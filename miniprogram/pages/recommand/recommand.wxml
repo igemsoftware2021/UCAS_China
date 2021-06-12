@@ -47,12 +47,17 @@
 
       <view class="div"></view>
 
+      <!--coffee that directly come from our own hardware design-->
       <label class="radio">
-        <radio>
           <view class="coffee-in-drink">
-            <view class=""></view>
+            <view class="choose-own-text">
+              <radio value="{{choice}}"></radio>
+              <text class="head-left-text">使用UCAS &nbsp; iGem团队提供硬件</text>
+            </view>
+            <navigator class="head-right-nav" url="../coffee_detail/coffee_detail">
+              <text class="head-right-text">>>>查看使用详情</text>
+            </navigator>
           </view>
-        </radio>
       </label>
     </radio-group>
   </view>
