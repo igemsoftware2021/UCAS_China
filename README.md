@@ -134,7 +134,7 @@ database_file中
 
 关键的页面/数据转移链基本完成
 
-与硬件协同进行的健康信息可视化处理仍停留在想法阶段，具体想法请见[健康界面设计](miniprogram/doc/report/miniprogram.md)
+与硬件协同进行的健康信息可视化处理仍停留在想法阶段，具体想法请见[健康界面设计](doc/miniprogram.md)
 
 ### 后期待完善
 

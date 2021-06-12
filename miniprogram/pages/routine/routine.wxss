@@ -1,0 +1,15 @@
+/* 此处还很简陋，有待装修 */
+.title{
+  text-align: center;
+}
+.options{
+  width: 100%;
+}
+.question{
+  width: 320px;
+  text-align: left;
+}
+.question-option{
+  width: 320px;
+  margin: 0px;
+}
