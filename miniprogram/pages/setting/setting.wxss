@@ -1,0 +1,57 @@
+page {
+    background: #dbdadaef;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .wrap{
+      width:100%;
+      padding:0;
+      box-sizing:border-box;
+  }
+  .title{
+       
+        font-size:50rpx;
+        font-weight:400;
+        color:rgba(62,62,62,1);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+  }
+  .name{
+    padding:30rpx;
+    font-size:34rpx;
+    font-weight:400;
+    color:rgba(62,62,62,1);
+    display:flex；
+  }
+
+  /*.gender{
+    padding:30rpx;
+    font-size:34rpx;
+    font-weight:400;
+    color:rgba(62,62,62,1);
+  }*/
+  .age{
+    padding:30rpx;
+    font-size:34rpx;
+    font-weight:400;
+    color:rgba(62,62,62,1);
+    display:flex；
+  }
+  .height{
+    padding:30rpx;
+    font-size:34rpx;
+    font-weight:400;
+    color:rgba(62,62,62,1);
+    display:flex；
+  }
+  .weight{
+    padding:30rpx;
+    font-size:34rpx;
+    font-weight:400;
+    color:rgba(62,62,62,1);
+    display:flex；
+  }
+ 
