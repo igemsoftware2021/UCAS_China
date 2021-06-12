@@ -128,7 +128,7 @@ database_file中
 
 在`.js`文件中添加如下代码
 
-```json
+```
 // 路径是wxCharts文件相对于本文件的相对路径
 // 框架代码已放在主目录下dist文件夹内
 var wxCharts = require('../../dist/wxcharts.js');
@@ -142,6 +142,8 @@ Page({
     }
 });
 ```
+
+
 
 **Step2：**
 
