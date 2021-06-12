@@ -1,7 +1,5 @@
-// pages/health/health.js
-const app = getApp()
+var wxCharts = require('../../dist/wxcharts.js');
 Page({
-
   data: {
     avatarUrl: './user-unlogin.png',
     userInfo: {},
@@ -11,30 +9,39 @@ Page({
     requestResult: '',
     canIUseGetUserProfile: false,
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl'), // 如需尝试获取用户信息可改为false
-    naviagte_content:[
-      {
-        id:0,
-        text:'睡眠',
-        url:'/pages/sleep/sleep',
-        active:0,
-        figure_active:'/images/health/sleep.png',
-        figure_inactive:'/images/health/sleep.png'
-      },{
-        id:1,
-        text:'心率',
-        url:'/pages/heartrate/heartrate',
-        active:0,
-        figure_active:'/images/health/heartrate.png',
-        figure_inactive:'/images/health/heartrate.png'
-      },{
-        id:2,
-        text:'心血氧饱和度',
-        url:'/pages/oxygen/oxygen',
-        active:0,
-        figure_active:'/images/health/oxygen.png',
-        figure_inactive:'/images/health/oxygen.png'
-      }
-      ]
+    can_buy:1,
+    market_coffee:[]
+  },
+
+  onLoad: function() {
+    if (!wx.cloud) {
+      wx.redirectTo({
+        url: '../chooseLib/chooseLib',
+      })
+      return
+    }
+    if (wx.getUserProfile) {
+      this.setData({
+        canIUseGetUserProfile: true,
+      })
+    }
+    new wxCharts({      
+      animation: true,
+      canvasId: 'pieCanvas',
+      type: 'pie',
+      series: [{
+      name: '深睡',
+      data: 2,
+      }, {
+      name: '浅睡',
+      data: 3,
+      }, {
+      name: '快速眼动',
+      data: 1,
+      }],
+      width: 400,
+      height: 400,
+    });
   },
 
   getUserProfile() {
