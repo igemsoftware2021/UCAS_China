@@ -1,32 +1,32 @@
 Page({
   data: {
     index:0,
-  stars:[
-    {
-      flag:1,
-      bgImg: "../../images/home/stars_inactive.png",
-      bgfImg:"../../images/home/stars_active.png"
-    },
-    {
-      flag:1,
-      bgImg: "../../images/home/stars_inactive.png",
-      bgfImg:"../../images/home/stars_active.png"
-    },
-    {
-      flag:1,
-      bgImg: "../../images/home/stars_inactive.png",
-      bgfImg:"../../images/home/stars_active.png"
-    },
-    {
-      flag:1,
-      bgImg: "../../images/home/stars_inactive.png",
-      bgfImg:"../../images/home/stars_active.png"
-    },
-    {
-      flag:1,
-      bgImg: "../../images/home/stars_inactive.png",
-      bgfImg:"../../images/home/stars_active.png"
-    },
+    stars:[
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
   ]},
   score:function(e){
     var that=this;

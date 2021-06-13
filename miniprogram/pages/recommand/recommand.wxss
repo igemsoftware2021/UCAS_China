@@ -159,3 +159,100 @@ page {
   line-height: 36rpx;
   word-break: break-all;
 }
+
+.num{
+  margin-top: 10px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: bisque;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+}
+.num-text{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.num-text{
+}
+.num-number{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.num-number-text{
+  font-size: large;
+}
+
+.drink{
+  width: 100vw;
+  margin-top: 15px;
+  border-top: solid;
+  border-top-width: 5px;
+  border-top-color:burlywood;
+}
+.radio-group{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.radio-out-buy{
+}
+.out-buy{
+  display: flex;
+  flex-direction: column;
+}
+.head-left-item{
+}
+.head-right-item{
+}
+.head-right-nav{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.head-right-text{
+  color: rgba(52, 92, 7, 0.795);
+  font-size: 13px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(77, 185, 235, 0.719);
+}
+.stars{
+  padding:85rpx 0 60rpx 273rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.stars image{
+  width: 190rpx;
+  height: 190rpx;
+  border: 1rpx solid #000;
+  position: absolute;
+  display: inline-block;
+  top: 41rpx;
+  left: 36rpx;
+}
+.stars .content view{
+  font-size: 32rpx;
+  color: #4a4a4a;
+}
+.stars .content>view:last-of-type{
+  height: 40rpx;
+  margin-top: 48rpx;
+}
+.stars .content>view:last-of-type view{
+  float: left;
+  width: 42rpx;
+  height: 42rpx;
+  margin-right: 25rpx;
+  background-size: 100% 100%;
+}
+.submit{
+  background-color: beige;
+}
