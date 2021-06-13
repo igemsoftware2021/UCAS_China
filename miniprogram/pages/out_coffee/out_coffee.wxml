@@ -19,6 +19,9 @@
 
   <view class="knowledge">
     <view class="knowledge-title">必须知道的咖啡因小知识</view>
-    <view class="knowledge-text"></view>
+    <view class="knowledge-text">
+      <view class="knowledge-part-1">
+      </view>
+    </view>
   </view>
 </view>
