@@ -65,7 +65,7 @@
                 <image class="pic" src="{{item.hardware-pic-src}}">
                 </image>
                 <view class="description">
-                  <text class="text">咖啡容量:{{item.contain}};咖啡因含量:{{item.caffein}}\n单价:{{item.price}}</text>
+                  <text class="text">咖啡容量:{{item.contain}};咖啡因含量:{{item.caffein}}</text>
                 </view>
               </view>
             </navigator>
@@ -76,19 +76,23 @@
 
   <!--对当前推荐评价-->
   <view class="evaluation">
-    <view class="evaluate_word">请问您对此次推荐是否满意？</view>
+    <view class="evaluate-word">
+      <text class="evaluate-word-text">请问您对此次推荐是否满意？</text>
+    </view>
     <!--采取打星的方式-->
     <view class='stars'>
       <view class='content'>
-        <view>评分</view>
-        <view>
-          <view wx:for="{{stars}}" wx:key="index" style='background:url("{{item.flag==1?item.bgImg:item.bgfImg}}") no-repeat top; background-size:100%;' data-index="{{index}}" bindtap='score'></view>
+        <view class="evaluation-text">
+          <text class="evaluation-text-text">评分</text>
         </view>
-        <block>{{index}}星</block>
+        <view class="stars-star">
+          <image class="stars-img" wx:for="{{stars}}" wx:key="index" src='{{item.flag==1?item.bgImg:item.bgfImg}}' data-index="{{index}}" bindtap='score'></image>
+        </view>
+        <view class="stars-num">
+          <text class="stars-num-text">{{index}}星</text></view>
       </view>
     </view>
     <form bindsubmit='bindFormsubmit'>
-          <textarea bindconfirm="confirm" placeholder="欢迎您提出任何对我们计算结果的建议，我们会继续不断改进ヾ(◍°∇°◍)ﾉﾞ" auto-focus='true' name="textarea" />
           <button  class="submit" form-type='submit'>提交</button>
     </form>
   </view>
