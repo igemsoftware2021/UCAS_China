@@ -1,0 +1,14 @@
+<!--pages/help/help_detail2.wxml-->
+<view class="container">
+  <view class="head">
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+  </view>
+</view>
+<view class="title">
+<text>
+  Caffein-monitor.1.0------ 暂无更新
+  </text></view>
+<view>
+<image class="image"
+src="../../images/topimage/版本信息.png"></image>
+</view>

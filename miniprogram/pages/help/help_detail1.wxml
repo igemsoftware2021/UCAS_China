@@ -1,0 +1,45 @@
+<!--pages/help/help_detail1.wxml-->
+
+<view class="container">
+  <view class="head">
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+  </view>
+<view>
+<text class="title">功能介绍</text>
+</view>
+
+<view>
+<text class="article-text">小程序页面：</text>
+
+<text class="artical-content" user-select="True">
+> 主界面，数据/评估方法根据您有无登陆选取一般标准/个性化标准，首次打开跳转至login界面
+
+> 可选择不登陆继续使用，但无法获得个性服务，首先是微信登陆，若注册过跳转到主界面，若未注册则需跳转至填写基本信息表单，然后选择是否记录当天作息作为标准
+
+> 添加咖啡记录，一种可以通过蓝牙/局域网网络等与硬件数据交互，另一种可以选择所喝咖啡
+
+> `健康`:与硬件联系，通过各种指标反映您的健康水平
+
+> 个人中心界面，内部可以查看健康/咖啡因摄入曲线
+
+> `历史`:查看咖啡因历史摄取详细记录
+
+> `设置`:查看您的基本设置
+
+> `日常饮用分析`:查看生活作息，可更改其中存储数据将作为推荐参考
+
+> `帮助`:帮助界面，查看使用说明
+
+> `关于我们`:了解开发团队
+
+> `privacy`:隐私协议
+
+</text>
+</view>
+</view>
+<view>
+<text class="article-text">祝您使用愉快！</text>
+</view>
+<view>
+  <image class="image" src="../../images/topimage/coffee.jpg"></image>
+</view>

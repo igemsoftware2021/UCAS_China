@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "pages":["pages/index/index",
+  "pages/img/img",
+  "pages/mine/mine",
+  "pages/search/search"
+]
+
+
+}
