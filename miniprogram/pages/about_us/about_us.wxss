@@ -14,3 +14,13 @@ page {
 .image{
   height: 26vh;
 }
+.competition-name-text,.team-name-text{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: larger;
+  color: darkslategray;
+}
+.competition-introduction-text,.team-introduction-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: small;
+}
