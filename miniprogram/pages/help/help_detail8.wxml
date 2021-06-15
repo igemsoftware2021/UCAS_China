@@ -1,0 +1,7 @@
+<!--pages/help/help_detail8.wxml-->
+<text>pages/help/help_detail8.wxml</text>
+<view class="container">
+  <view class="head">
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+  </view>
+</view>

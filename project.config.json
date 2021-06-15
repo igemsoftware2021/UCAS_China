@@ -40,6 +40,9 @@
   "appid": "wx24a0bdcd804e5c51",
   "projectname": "caffein-monitor",
   "libVersion": "2.14.1",
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
       "list": []

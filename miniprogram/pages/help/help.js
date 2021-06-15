@@ -14,9 +14,6 @@ Page({
     canIUseGetUserProfile: false,
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') // 如需尝试获取用户信息可改为false
   },
-
-
-
   taberTop:function(e){
     console.log(e);
     this.setData({
@@ -43,9 +40,7 @@ Page({
     currentIndex: 0,
     "firstList": [{ name: '' }],
     "secondList": [{ name: ''}],
-    "thirdList": [{ name: '010-1100-1910' }],
-    "fourthpage":[{page:'my weichat app is going to be a great success'}],
-  }, 
+    "thirdList": [{ name: '010-1100-1910' }]},
   
   //用户点击tab时调用
   titleClick: function (e) {
@@ -55,15 +50,56 @@ Page({
         currentIndex: e.currentTarget.dataset.idx
       })
   },
-  buttonclick:function(){
+  buttonclick:function(e){
     wx.navigateTo({
-      url: 'help_datail',
-      
+      url: './help_detail',
     })
- 
-  } ,
+
+  },
+  buttonclick1:function(e){
+   wx.navigateTo({
+     url: './help_detail1',
+   })}
+  ,
+  buttonclick2:function(e){
+   wx.navigateTo({
+     url:'./help_detail2',
+   })
+  },
+  buttonclick3:function(e){
+   wx.navigateTo({
+     url:'./help_detail3',
+   })
+  },
+  buttonclick4:function(e){
+   wx.navigateTo({
+     url:'./help_detail4',
+   })
+  },
+  buttonclick5:function(e){
+   wx.navigateTo({
+     url:'./help_detail5',
+   })
+  },
+  buttonclick6:function(e){
+   wx.navigateTo({
+     url:'./help_detail6',
+   })
+  },
+  buttonclick7:function(e){
+   wx.navigateTo({
+     url:'./help_detail7',
+   })
+  },
+  buttonclick8:function(e){
+   wx.navigateTo({
+     url:'./help_detail8',
+   })
+  },
 
 
+
+  
   //swiper切换时会调用
   pagechange: function (e) {
     if ("touch" === e.detail.source) {
