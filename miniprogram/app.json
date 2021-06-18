@@ -26,7 +26,8 @@
     "pages/im/im",
     "pages/im/room/room",
     "pages/web_view/web_view",
-    "pages/feedback/feedback"
+    "pages/feedback/feedback",
+    "pages/privacy_contract/privacy_contract"
   ],
   "useExtendedLib": {
     "weui": true

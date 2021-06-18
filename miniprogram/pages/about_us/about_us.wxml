@@ -19,9 +19,7 @@
     </view>
     <view class="line"></view>
     <view class="competition-introduction">
-      <text class="competition-introduction-text">国际基因工程机器大赛（InternationalGenetically Engineered Machine Competition，即iGEM创始于2003年，每年由美国麻省理工学院（Massachusetts Institute ofTechnology，MIT）主办，是合成生物学领域的国际性学术竞赛。
-国际基因工程机器大赛涵盖多学科,iGEM团队需要利用标准生物模块（Biobricks）来构建基因回路、建立有效的数学模型，实现对精致复杂人工生物系统（artificial biosystem）的预测、操纵和测量以完成比赛。目标是希望通过学术竞赛的模式：实现生物学的系统化、工程化;促进生物工具的开源化、透明化发展;帮助构建一个可以安全、有效地应用生物技术的工程体系
-learn more:https://2021.igem.org/Main_Page</text>
+      <text class="competition-introduction-text"></text>
     </view>
   </view>
 
@@ -31,9 +29,17 @@ learn more:https://2021.igem.org/Main_Page</text>
     </view>
     <view class="line"></view>
     <view class="team-introduction">
-      <text class="team-introduction-text">中国科学院大学（University of Chinese Academy of Sciences）简称“国科大”，是一所以科教融合为办学模式、研究生教育为办学主体的创新型大学，入选国家“世界一流学科建设高校”、“基础学科拔尖学生培养试验计划”，环太平洋大学联盟、京港大学联盟、中国高校行星科学联盟、中欧商校联盟成员，首批学位授权自主审核单位。
-      learn more:https://2021.igem.org/Team:UCAS-China</text>
+      <text class="team-introduction-text"></text>
     </view>
     <view class="team-members"></view>
+  </view>
+  <view class="versions">
+    <image src="../../images/home/user_1.png"></image>
+    <view class="app-name">Caffein-monitor</view>
+    <view class="version">V 1.1.1</view>
+  </view>
+  <view class="bottom">
+    <navigator class="privacy" url="../privacy_contract/privacy_contract">用户协议及隐私政策</navigator>
+    <text class="bottom_text">Copyright .All Rights Reserved</text>
   </view>
 </view>
