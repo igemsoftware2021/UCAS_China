@@ -52,50 +52,39 @@ Page({
   },
   buttonclick:function(e){
     wx.navigateTo({
-      url: './help_detail',
+      url: '../../pages/help/help_detail_CMT/help_detail_CMT',
     })
-
-  },
+  },                             //跳转到Coffein-moniter页面
   buttonclick1:function(e){
    wx.navigateTo({
-     url: './help_detail1',
-   })}
-  ,
+     url: '../../pages/help/help_detail_UM/help_detail_UM',
+   })
+  },                             //跳转到使用方法页面
   buttonclick2:function(e){
    wx.navigateTo({
-     url:'./help_detail2',
+     url:'./help_detail_version/help_detail_version',
    })
-  },
+  },                              //跳转到版本更新页面
   buttonclick3:function(e){
    wx.navigateTo({
-     url:'./help_detail3',
+     url:'./help_detail_text1/help_detail_text1',
    })
-  },
+  },                               //跳转到第一篇推文
   buttonclick4:function(e){
    wx.navigateTo({
-     url:'./help_detail4',
+     url:'./help_detail_text2/help_detail_text2',
    })
-  },
+  },                               //跳转到第二篇推文
   buttonclick5:function(e){
    wx.navigateTo({
-     url:'./help_detail5',
+     url:'./help_detail_text3/help_detail_text3',
    })
-  },
+  },                               //跳转到第三篇推文
   buttonclick6:function(e){
    wx.navigateTo({
-     url:'./help_detail6',
+     url:'./help_detail_P-QR/help_detail_P-QR',
    })
-  },
-  buttonclick7:function(e){
-   wx.navigateTo({
-     url:'./help_detail7',
-   })
-  },
-  buttonclick8:function(e){
-   wx.navigateTo({
-     url:'./help_detail8',
-   })
-  },
+  },                               //跳转到平台二维码页面
 
 
 

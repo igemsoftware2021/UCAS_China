@@ -2,12 +2,12 @@
 
 <view class="container">
   <view class="head">
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../help_coffee_detail_images/coffee_top.png"></image>
   </view>
 </view>
 <view class="title">
 <text>关注我们</text></view>
 <view>
 <image style="width: 100vw;height:380px;background-color;#eeeeee" mode="aspectFill"
-src="../../images/topimage/公众号二维码.jpg"></image>
+src="../help_coffee_detail_images/公众号二维码.jpg"></image>
 </view>

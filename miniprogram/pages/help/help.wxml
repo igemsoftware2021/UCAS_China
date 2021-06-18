@@ -88,14 +88,15 @@
            bindtap='buttonclick6'>
               <span>平台二维码</span>
             </view>
-            <view class='name'
-            bindtap='buttonclick7'>
-              <span>客服微信</span>
+            <view class='name'>
+            <contact-button>
+            在线客服
+            </contact-button>
             </view>
-            <view class='name'
-            bindtap='buttonclick8'>
+            <view class='name'>
               <span>客服电话--{{item.name}}</span>
-            </view>
+            </view> 
+            
           </view>
         </swiper-item>
       </swiper>

@@ -2,30 +2,18 @@
 
 <view class="container">
   <view class="head">
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../help_coffee_detail_images/coffee_top.png"></image>
   </view>
 </view>
-<view><text class="title">Caffein-moniter</text>
-  <image class="image" src="../../images/topimage/igem.jpg"></image>
+<view>
+<image class="image" src="../help_coffee_detail_images/igem.jpg"></image>
 </view>
 <view>
-
-<text class="artical-text">
+-------------------UCAS--------------------
+</view>
+<view class="view1">
+<text class="article-text">
   这里是为UCAS-2021团队为coffee子项目内设计的微信小程序，主要作用为记录监测用户咖啡因摄取量，根据用户自身情况设定并灵活调整标准值，依照用户日常作息给出咖啡因摄取量的推荐。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
