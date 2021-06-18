@@ -1,0 +1,4 @@
+<text>心率·HeartRate</text>
+<canvas canvas-id="lineCanvas" disable-scroll="true" class="lineCanvas" style="width:400px; height:400px;"></canvas>
+<text>2021年6月12日</text>
+<text>心率范围：42-112次/分钟</text>

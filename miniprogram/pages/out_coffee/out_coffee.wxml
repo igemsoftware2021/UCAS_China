@@ -1,2 +1,27 @@
 <!--pages/out_coffee/out_coffee.wxml-->
-<text>pages/out_coffee/out_coffee.wxml</text>
+<view class="container">
+  <view>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+  </view>
+  <view class="recommand-amount">
+    <view class="recommand-amount-time">当前时间：{{time}}</view>
+    <view class="recommand-amount-text">根据计算推荐您饮用：</view>
+    <view class="recommant-amount-num">
+      <view class="recommant-amount-num-number">{{amount}}</view>
+      <view class="recommant-amount-num-unit">mg/kg</view>
+    </view>
+    <view class="recommand-amount-example">
+      以下产品符合要求
+    </view>
+  </view>
+
+  <view class="gap-line"></view>
+
+  <view class="knowledge">
+    <view class="knowledge-title">必须知道的咖啡因小知识</view>
+    <view class="knowledge-text">
+      <view class="knowledge-part-1">
+      </view>
+    </view>
+  </view>
+</view>

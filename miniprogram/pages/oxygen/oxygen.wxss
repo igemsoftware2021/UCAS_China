@@ -1,4 +1,3 @@
-/* pages/out_coffee/out_coffee.wxss */
 page {
   background: #f6f6f6;
   display: flex;

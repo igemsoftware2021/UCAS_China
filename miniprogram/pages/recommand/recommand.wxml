@@ -14,8 +14,8 @@
   </view>
 
   <view class="drink">
-    <radio-group>
-      <label class="radio">
+    <radio-group class="radio-group">
+      <label class="radio-out-buy">
         <view class="out-buy" wx:if="{{can_buy==1}}">
           <view class="head-item">
             <view class="head-left-item">
@@ -47,20 +47,53 @@
 
       <view class="div"></view>
 
-      <label class="radio">
-        <radio>
+      <!--coffee that directly come from our own hardware design-->
+      <label class="radio-hardware">
           <view class="coffee-in-drink">
-            <view class=""></view>
+            <view class="choose-own-text">
+              <radio value="{{choice}}"></radio>
+              <text class="head-left-text">使用UCAS iGem团队提供硬件</text>
+            </view>
+            <navigator class="head-right-nav" url="../coffee_detail/coffee_detail">
+              <text class="head-right-text">>>>查看使用详情</text>
+            </navigator>
           </view>
-        </radio>
+
+          <view class="coffee-pic">
+            <navigator class="hard-pic" url="../coffee_detail/coffee_detail">
+              <view class="hardware-pic-item">
+                <image class="pic" src="{{item.hardware-pic-src}}">
+                </image>
+                <view class="description">
+                  <text class="text">咖啡容量:{{item.contain}};咖啡因含量:{{item.caffein}}</text>
+                </view>
+              </view>
+            </navigator>
+          </view>
       </label>
     </radio-group>
   </view>
 
   <!--对当前推荐评价-->
   <view class="evaluation">
-    <view class="evaluate_word">请问您对此次推荐是否满意？</view>
+    <view class="evaluate-word">
+      <text class="evaluate-word-text">请问您对此次推荐是否满意？</text>
+    </view>
     <!--采取打星的方式-->
-    <view class="evaluate"></view>
+    <view class='stars'>
+      <view class='content'>
+        <view class="evaluation-text">
+          <text class="evaluation-text-text">评分</text>
+        </view>
+        <view class="stars-star">
+          <image class="stars-img" wx:for="{{stars}}" wx:key="index" src='{{item.flag==1?item.bgImg:item.bgfImg}}' data-index="{{index}}" bindtap='score'></image>
+        </view>
+        <view class="stars-num">
+          <text class="stars-num-text">{{index}}星</text></view>
+      </view>
+    </view>
+    <form bindsubmit='bindFormsubmit'>
+          <button  class="submit" form-type='submit'>提交</button>
+    </form>
   </view>
 </view>

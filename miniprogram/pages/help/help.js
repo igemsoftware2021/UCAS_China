@@ -1,6 +1,8 @@
 //index.js
 const app = getApp()
 
+
+
 Page({
   data: {
     avatarUrl: './user-unlogin.png',
@@ -13,6 +15,65 @@ Page({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') // 如需尝试获取用户信息可改为false
   },
 
+
+
+  taberTop:function(e){
+    console.log(e);
+    this.setData({
+      state: e.currentTarget.dataset.state
+    })
+  },
+  refresh:function(e){
+    this.setData({
+      refreshState: true
+    })
+    setTimeout(() =>{
+      this.setData({
+        refreshState: false
+      })
+    },2000)
+  },
+  toBottom(e) {//到底部
+    console.log(e)
+  },
+
+// pages/mine/mine.js
+
+  data: {
+    currentIndex: 0,
+    "firstList": [{ name: '' }],
+    "secondList": [{ name: ''}],
+    "thirdList": [{ name: '010-1100-1910' }],
+    "fourthpage":[{page:'my weichat app is going to be a great success'}],
+  }, 
+  
+  //用户点击tab时调用
+  titleClick: function (e) {
+    let currentPageIndex =
+      this.setData({
+        //拿到当前索引并动态改变
+        currentIndex: e.currentTarget.dataset.idx
+      })
+  },
+  buttonclick:function(){
+    wx.navigateTo({
+      url: 'help_datail',
+      
+    })
+ 
+  } ,
+
+
+  //swiper切换时会调用
+  pagechange: function (e) {
+    if ("touch" === e.detail.source) {
+      let currentPageIndex = this.data.currentIndex
+      currentPageIndex = (currentPageIndex + 1) % 3
+      this.setData({
+        currentIndex: currentPageIndex
+      })
+    }
+  },
   onLoad: function() {
     if (!wx.cloud) {
       wx.redirectTo({
@@ -26,6 +87,7 @@ Page({
       })
     }
   },
+
 
   getUserProfile() {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
