@@ -5,4 +5,6 @@ exports.main = async (event, context) => {
   // 获取 OPENID 等微信上下文请使用 cloud.getWXContext()
   delete event.userInfo
   return event
-}
+};
+
+  

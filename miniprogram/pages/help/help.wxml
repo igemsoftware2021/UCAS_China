@@ -53,33 +53,31 @@
       <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
         <swiper-item class='swiper'>
           <view wx:for="{{firstList}}" wx:for-item="item" class="record-item">
-            <view class='name'
-            bindtap='buttonclick' id="0">
+          <view class='name' bindtap="buttonclick">
+              <view>
               <span>Caffein-moniter</span>
+              </view>
             </view>
             <view class='name'
-            bindtap='buttonclick'> 
-            <span>功能介绍</span>
+            bindtap="buttonclick1"> 
+            <span>使用方法</span>
             </view>
            <view class='name'
-           bindtap='buttonclick'  id="1"><span>版本更新</span></view>
+           bindtap='buttonclick2' ><span>版本更新</span></view>
           </view>
-
-
- 
         </swiper-item>
         <swiper-item class='swiper' class='swiper'>
           <view wx:for="{{secondList}}" wx:for-item="item" class='record-item'>
             <view class='name'
-            bindtap='buttonclick' data-idx="6">
+            bindtap='buttonclick3'>
               <span>当咖啡与健康相遇</span> 
             </view>
             <view class='name'
-            bindtap='buttonclick' data-idx="7">
+            bindtap='buttonclick4'>
               <span>咖啡因的前世今生</span> 
             </view>
             <view class='name'
-            bindtap='buttonclick' data-idx="8">
+            bindtap='buttonclick5'>
               <span>防弹饮食计划</span> 
             </view>
           </view>
@@ -87,17 +85,18 @@
         <swiper-item class='swiper' class='swiper'>
           <view wx:for="{{thirdList}}" wx:for-item="item" class='record-item'>
            <view class='name'
-           bindtap='buttonclick' data-idx="9">
+           bindtap='buttonclick6'>
               <span>平台二维码</span>
             </view>
-            <view class='name'
-            bindtap='buttonclick' data-idx="10">
-              <span>客服微信</span>
+            <view class='name'>
+            <contact-button>
+            在线客服
+            </contact-button>
             </view>
-            <view class='name'
-            bindtap='buttonclick' data-idx="11">
+            <view class='name'>
               <span>客服电话--{{item.name}}</span>
-            </view>
+            </view> 
+            
           </view>
         </swiper-item>
       </swiper>

@@ -1,4 +1,4 @@
-// pages/help/help_datail.js
+// pages/help/help_detail1.js
 Component({
   /**
    * 组件的属性列表
