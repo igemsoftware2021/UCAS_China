@@ -1,7 +1,7 @@
 <view class="container">
 <image class="topimage" src="../../images/home/feedbackimage.jpg"></image>
   <view class='stars'>
-    <image src='../../images/home/user_1.png' style="position: absolute; left: -10rpx; top: 85rpx; width: 204rpx; height: 193rpx; display: block; box-sizing: border-box"></image>
+    <image src='../../images/home/user_1.png' style="position: absolute; left: -12rpx; top: 85rpx; width: 204rpx; height: 193rpx; display: block; box-sizing: border-box"></image>
     <view class='content'>
       <view>评分</view>
       <view>
@@ -24,7 +24,7 @@
     <view class="images" bindtap="upload" style="width: 190rpx; height: 174rpx; display: flex; box-sizing: border-box; left: 10rpx; top: -26rpx; position: relative">
       <image src='../../images/home/add_image.png' mode='widthFix' />
   </view>
-  <text class="imagetext" style="width: 235rpx; height: 68rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">最多上传9张图片</text>
+  <text class="imagetext" style="width: 174rpx; height: 139rpx; display: block; box-sizing: border-box; left: 0rpx; top: 0rpx">最多上传9张图片</text>
   </view>
 </view>
 <button  class="submit" form-type='submit'>提交</button>
