@@ -21,7 +21,6 @@
     "pages/openapi/callback/callback",
     "pages/openapi/cloudid/cloudid",
     "pages/out_coffee/out_coffee",
-    "pages/privacy/privacy",
     "pages/coffee_detail/coffee_detail",
     "pages/web_view/web_view",
     "pages/feedback/feedback",

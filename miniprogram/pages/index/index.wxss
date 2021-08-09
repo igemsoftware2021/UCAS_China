@@ -18,3 +18,59 @@ button{
 .login-button{
   width: 100%;
 }
+
+.stars{
+  height: 30vh;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgb(56, 187, 30);
+}
+.evaluation-text{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.stars-star{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.stars-img{
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+.stars-num{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.submit{
+  background-color: beige;
+}
+.evaluation{
+  width: 100vw;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border-top: solid;
+  border-top-width: 5px;
+  border-top-color:burlywood;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.evaluate-word{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.evaluate-word-text{
+
+}
