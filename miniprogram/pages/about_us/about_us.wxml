@@ -33,4 +33,13 @@
     </view>
     <view class="team-members"></view>
   </view>
+  <view class="versions">
+    <image src="../../images/home/user_1.png"></image>
+    <view class="app-name">Caffein-monitor</view>
+    <view class="version">V 1.1.1</view>
+  </view>
+  <view class="bottom">
+    <navigator class="privacy" url="../privacy_contract/privacy_contract" style="width: 383rpx; height: 214rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">用户协议及隐私政策</navigator>
+    <text class="bottom_text">Copyright .All Rights Reserved</text>
+  </view>
 </view>

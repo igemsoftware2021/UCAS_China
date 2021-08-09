@@ -1,0 +1,75 @@
+<!--pages/help/help_detail3.wxml-->
+<view class="container">
+  <view class="head">
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="widthFix" src="../help_coffee_detail_images/coffee_top.png"></image>
+  </view>
+</view>
+<view class="content">
+        <view class="author-date"> 
+            <text class="date">logo 2021年6月 转自网络</text>
+        </view>
+        <!-- 标题内容 -->
+         <text class="title">当咖啡因与健康相遇</text>
+         
+        <view ><text class="article-content">咖啡致癌论，咖啡会引起骨折疏松......很多人，特别是老年人，谈咖啡色变，认为喝咖啡会致癌，咖啡会导致骨钙的大量流失，引起骨质疏松，甚至骨折，其实不尽然。咖啡对健康有很多益处。咖啡含有很高含量的抗氧化剂成分，可降低患许多疾病的风险。当然，咖啡的主要活性成分是咖啡因，一种兴奋剂，会引起一些问题和扰乱睡眠。让我们来看看咖啡对健康有哪些积极和消极的影响吧</text>
+
+   <image class="image" mode="widthFix" src="../help_coffee_detail_images/for txt1.png"></image>
+    <text  class="article-content">咖啡含有一些必需的营养素，而且抗氧化剂含量极高。
+一杯8盎司（240mL）咖啡含有：
+维生素B2（核黄素）：11％
+维生素B5（泛酸）：6％
+维生素B1（硫胺素）：2％
+维生素B3（烟酸）：2％
+叶酸：1％
+锰：3％
+钾：3％
+镁：2％
+磷：1％
+</text>
+<image class="image" mode="widthFix" src='../help_coffee_detail_images/for txt2.png'></image>
+  <text class="article-content">咖啡豆中天然存在许多营养物质。
+
+这可能看起来不是很多，但试着将这些数字与每天喝几杯咖啡相乘 - 它可以很大程度地增加您每日营养素的摄入量。咖啡的抗氧化剂含量很高。事实上，典型的西方饮食中，从咖啡中获取的抗氧化剂营养素要比从蔬菜水果中获取的高很多。
+
+总结：咖啡含有少量的维生素和矿物质，如果你每天喝很多杯咖啡，获取的抗氧化营养物质也很高。
+
+咖啡中含有咖啡因，一种能增强大脑功能和促进新陈代谢的兴奋剂。
+
+咖啡因是世界上最常见的兴奋剂。软饮料、茶和巧克力都含有咖啡因，但咖啡是最大的来源。一杯咖啡的咖啡因含量在30-300毫克,大量研究表明咖啡因能促进大脑功能的短期提升，改善情绪、反应时间、警觉和一般认知功能。咖啡因还可以促进3—11%新陈代谢水平和提高11—12%运动能力。然而，这些效应中的一些可能是短期的。如果你每天喝咖啡，你就会建立起一种耐受力—它的效果将不那么强大。
+
+总结：咖啡中的主要活性成分是兴奋剂--咖啡因，它能在身体能量水平、大脑功能、新陈代谢率和运动表现上短期提升。
+
+咖啡可保护大脑免受阿尔茨海默病和帕金森影响</text>
+
+        </view>
+        <image class="image" mode="widthFix" src='../help_coffee_detail_images/for txt3.png'></image>
+        <text class="article-content">阿尔茨海默病是世界上最常见的神经退行性疾病，也是痴呆症的主要原因。研究表明，喝咖啡的人患阿尔茨海默病的风险可降低65%。帕金森氏症是第二常见的神经退行性疾病，由大脑中产生多巴胺的神经元死亡引起。喝咖啡的人患帕金森病的风险可降低32-60%左右。喝的咖啡越多，风险就越低。
+
+总结：多项研究表明，喝咖啡的人老年患痴呆、阿尔茨海默病和帕金森病的风险要低得多。
+
+喝咖啡的人患2型糖尿病的风险要低得多
+
+</text>
+<image class="image" mode="widthFix"  src='../help_coffee_detail_images/for txt4.png'></image>
+<text class="article-content">抑郁症是世界上最常见的精神障碍，导致生活质量显著下降。2011年哈佛大学的一项研究中，喝咖啡最多的人患抑郁症的风险降低了20%。三项大型队列研究结果发现，每天喝四杯或更多咖啡的人自杀的可能性降低了53%。
+
+总结:喝咖啡的人患抑郁症的风险较低，而且自杀的可能性显著降低。
+
+多项研究表明，喝咖啡的人寿命更长
+
+考虑到喝咖啡的人患上许多常见的致命疾病的风险较低，还有自杀的风险降低，咖啡可以长寿。据新英格兰杂志报道，对402，260名50-71岁的人群长期随访了12-13年，发现喝咖啡的人死亡的风险要低得多。最佳剂量似乎是每天4-5杯，男性和女性的死亡风险分别降低12%和16%。
+</text>
+<image class="image" mode="widthFix" src='../help_coffee_detail_images/for txt5.png'></image>
+<text class="article-content">可见，喝咖啡好处多多。当然，只谈论好而不提及坏是不对的。事实上，咖啡也有一些不利的方面，尽管这些因人而异。
+
+
+
+
+
+免责声明：
+以上文章转载自网络
+
+
+
+</text>
+    </view>

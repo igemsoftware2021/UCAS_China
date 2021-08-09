@@ -1,0 +1,43 @@
+/* pages/help/help_detail1.wxss */
+page {
+  background: #ecebebef;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+} 
+.text_symbol{
+  color: #070707ef;
+  font-size: medium;
+  font-weight: bold;
+}
+.article-text{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: small;
+}
+.view1{
+  border:6rpx solid lightgrey;
+  margin:10rpx;
+  text-align:justify;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 30rpx;
+  background-position-x: center;
+  background-color: aliceblue;
+}
+.title_1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position:left;
+  font-weight: bold;
+  font-size: larger;
+  color: rgb(124, 216, 216);
+}
+.image{
+  margin-left: 16px;
+  width: 100%;
+  margin: auto 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 15rpx;
+}

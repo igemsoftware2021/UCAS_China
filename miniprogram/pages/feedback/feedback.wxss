@@ -1,0 +1,121 @@
+.stars{
+  padding:85rpx 0 60rpx 273rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.topimage{
+  height: 26vh;
+}
+.feedback_tips{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: midnightblue;
+}
+.stars image{
+  width: 190rpx;
+  height: 190rpx;
+  border: 1rpx solid #000;
+  position: absolute;
+  display: inline-block;
+  top: 50rpx;
+  left: 10rpx;
+}
+.stars .content view{
+  font-size: 32rpx;
+  color: #4a4a4a;
+}
+.stars .content>view:last-of-type{
+  height: 40rpx;
+  margin-top: 48rpx;
+}
+.stars .content>view:last-of-type view{
+  float: left;
+  width: 42rpx;
+  height: 42rpx;
+  margin-right: 25rpx;
+  background-size: 100% 100%;
+}
+.submit{
+  background-color:azure
+}
+.conts{
+  width:90%;
+  height: auto;
+  position:relative;
+  padding-bottom:50rpx;
+  margin:0 auto;
+}
+.areas{
+  width:100%;
+  height:152rpx;
+  font-size: 30rpx;
+  text-indent: 28rpx;
+  border: 1rpx solid gainsboro;
+  padding-top: 30rpx;
+  margin: 0 auto;
+  overflow: hidden;   
+  position: relative; 
+}
+.currentWordNumber{
+  font-size: 28rpx;
+  color: gray;
+  position: absolute;
+  right:10rpx;
+  bottom:10rpx;
+}
+.hint{
+   font-size: 28rpx;
+   position: absolute;
+   left:20rpx;
+   bottom:10rpx;
+   color: #FF6600;
+}
+/* 图片 */
+.img_box{
+  width:690rpx;
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 auto;
+}
+.imgs{
+  width:50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom:10rpx;
+}
+.imgs image{
+  width:90%;
+  max-height:212rpx;
+  border:1px solid rgba(214, 212, 212, 0.1);
+  /* box-shadow: 5rpx 5rpx 1rpx 3rpx #e2e0e0; */
+}
+.imgs .images{
+  position:relative;
+}
+.images button{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.img_box .images{
+  width:90%;
+	height: 212rpx;
+  border:1px solid #E8E8E8;
+  border-radius:4rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img_box .images>image{
+  width:70rpx;
+	height:50rpx;
+}
+.imagetext{
+  font-size: small;
+  font-weight: lighter;
+  display:inline-block;
+  width: 200px;
+}
