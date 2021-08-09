@@ -68,7 +68,7 @@ Page({
         rules: {required: true, message: '肝脏疾病是必选项'},
     }, {
         name: 'cigaratte',
-        rules: {required: true, message: '吸烟频繁程度必填'},
+        rules: {required: false, message: '吸烟频繁程度选填'},
     }, {
         name: 'agree',
         rules: {required: true, message: '请勾选同意隐私政策'},
@@ -119,6 +119,11 @@ Page({
         liver_fill:1
       })
     }
+    else{
+      this.setData({
+        liver_fill:0
+      })
+    }
   },
 
   sliderchange(e) {
@@ -144,16 +149,13 @@ Page({
       [`formData.${field}`]: e.detail.value
     })
   },
-  checkboxChange: function (e) {
-    this.setData({
-      agree: true,
-      [`formData.agree`]: e.detail.value,
-    });
-  },
   bindAgreeChange: function (e) {
-      this.setData({
-          agree: e.detail.value.length
-      });
+    console.log(this.data.agree)
+    console.log(e.detail.value.length)
+    console.log(e.detail.value)
+    this.setData({
+      [`formData.agree`]: this.data.agree
+    })
       if (e.detail.value.length==1){
        this.setData({
          btn_disabled:false,
@@ -180,18 +182,25 @@ Page({
         wx.showToast({
           title: '校验通过'
         })
+        console.log(this.data.openid)
+        console.log(this.data.formData)
         const db = wx.cloud.database()
-        db.collection('users').where({
-          _openid:this.data.openid
-        }).add({
+        db.collection('users').add({
           data:{
-            basic_arg:formData
+            _id:this.data.openid,
+            basic_arg:this.data.formData
           },
           success: function(res) {
             // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
             console.log(res)
-            wx.redirectTo({
-              url: '../index/index?hasUserInfo=1',
+            app.globalData.indatabase = true
+            let pages = getCurrentPages(); // 当前页的数据，
+            let prevPage = pages[pages.length - 2]; // 上一页的数据
+            prevPage.setData({
+              hasUserInfo:true
+            })
+            wx.navigateBack({
+              delta: 1
             })
           }
         })

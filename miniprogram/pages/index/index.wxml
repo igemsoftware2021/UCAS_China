@@ -4,7 +4,7 @@
     <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="{{src}}"></image>
   </view>
 
-  <view class="login-btn" wx:if="{{hasUserInfo}}==false">
+  <view class="login-btn" wx:if="{{!hasUserInfo}}">
     <button class="login-button" type="primary" plain="true" style="width:80vw"
       bindtap="getUserProfile">登陆以为您量身定制</button>
   </view>
@@ -43,14 +43,31 @@
   </view>
 
   <view class="navigate">
-      <button class="login-button" type="primary" plain="true" style="width:80vw" disabled="{{hasUserInfo}}" bindtap="switchTab"
+      <button class="login-button" type="primary" plain="true" style="width:80vw" disabled="{{!hasUserInfo}}" bindtap="switchTab"
         >前往查看饮品</button>
   </view>
-  <!--对当前计算评价-->
-  <view class="evaluation">
-    <view class="evaluate_word">请问您对此次计算是否满意？</view>
+
+  <!--对当前推荐评价-->
+  <view class="evaluation" wx:if="{{hasUserInfo}}">
+    <view class="evaluate-word">
+      <text class="evaluate-word-text">请问您对此次推荐是否满意？</text>
+    </view>
     <!--采取打星的方式-->
-    <view class="evaluate"></view>
+    <view class='stars'>
+      <view class='content'>
+        <view class="evaluation-text">
+          <text class="evaluation-text-text">评分</text>
+        </view>
+        <view class="stars-star">
+          <image class="stars-img" wx:for="{{stars}}" wx:key="index" src='{{item.flag==1?item.bgImg:item.bgfImg}}' data-index="{{index}}" bindtap='score'></image>
+        </view>
+        <view class="stars-num">
+          <text class="stars-num-text">{{index}}星</text></view>
+      </view>
+    </view>
+    <form bindsubmit='bindFormsubmit'>
+          <button  class="submit" form-type='submit'>提交</button>
+    </form>
   </view>
 
   <!--当日咖啡摄取量情况-->

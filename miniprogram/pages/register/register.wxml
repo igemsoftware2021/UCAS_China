@@ -43,14 +43,16 @@
                 checked="{{item.checked}}"></mp-checkbox>
             </mp-checkbox-group>
           </mp-cells>
-          <view class="weui-cells__title" wx:if="{{liver_fill}}">若有，请填写具体疾病</view>
-          <view class="weui-cells weui-cells_after-title" wx:if="{{liver_fill}}">
-            <view class="weui-cell">
-              <view class="weui-cell__bd">
-                <input class="weui-input" placeholder="请输入疾病名称" />
+          <mp-cells wx:if="{{liver_fill}}">
+            <view class="weui-cells__title">若有，请填写具体疾病</view>
+            <view class="weui-cells weui-cells_after-title" wx:if="{{liver_fill}}">
+              <view class="weui-cell">
+                <view class="weui-cell__bd">
+                  <input class="weui-input" placeholder="请输入疾病名称" />
+                </view>
               </view>
             </view>
-          </view>
+          </mp-cells>
         </view>
         <mp-cells title="请滑动滑块选择吸烟频繁度">
           <view class="body-view">
@@ -58,15 +60,18 @@
           </view>
         </mp-cells>
 
-
-        <label class="checkbox">
+        <mp-cells title="是否同意隐私政策">
+          <view class="weui-cell__bd">
+          <label class="checkbox">
           <checkbox-group bindchange="bindAgreeChange">
             <view class="checkbox">
               <checkbox value="agree" checked="{{agree}}" />
-              我已阅读并同意<navigator url="../privacy/privacy" style='color:#CCAE73' class="weui-agree__link">《相关条款》</navigator>
+              我已阅读并同意<navigator url="../privacy_contact/privacy_contact" style='color:#CCAE73' class="weui-agree__link">《相关条款》</navigator>
             </view>
           </checkbox-group>
-        </label>
+          </label>
+          </view>
+        </mp-cells>
 
         <view class="weui-btn-area">
           <button class="weui-btn" type="primary" bindtap="submitForm" disabled='{{btn_disabled}}'>确定提交</button>

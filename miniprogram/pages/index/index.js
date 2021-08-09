@@ -34,6 +34,35 @@ Page({
     openid:'',
     session:'',
     indatabase:false,
+    index:0,
+    stars:[
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
+      {
+        flag:1,
+        bgImg: "../../images/home/stars_inactive.png",
+        bgfImg:"../../images/home/stars_active.png"
+      },
+    ],
+    recom_amount:0
   },
 
   onLoad: function(options) {
@@ -48,15 +77,23 @@ Page({
         canIUseGetUserProfile: true,
       })
     }
-    /*if(options.data.hasUserInfo==1){
+    if(options.data.hasUserInfo==1){
       this.setData({
-        hasUserInfo:1
+        hasUserInfo:true
       })
-    }*/
+    }
+    else{
+      this.setData({
+        hasUserInfo:false
+      })
+    }
     console.log(options)
   },
 
   getUserProfile() {
+    this.setData({
+      hasUserInfo: true
+    })
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
     wx.getUserProfile({
       desc: '将为您提供个性化方案', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
@@ -121,31 +158,43 @@ Page({
           _openid:this.data.openid
         }).get({
           success: function(res) {
+            console.log("hit")
             console.log(res.data)
-            this.setData({
-              indatabase:true
-            })
-            app.globalData.indatabase=this.data.indatabase
+            if(res.data.length>0){
+              that.setData({
+                indatabase:true
+              })
+              app.globalData.indatabase=that.data.indatabase
+            }
+            console.log(that.data.indatabase)
+            if(!that.data.indatabase){
+              wx.navigateTo({
+                url: '../register/register',
+                events: {
+                  // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
+                  acceptDataFromOpenedPage: function(data) {
+                    console.log(data)
+                  },
+                  someEvent: function(data) {
+                    console.log(data)
+                  }
+                },
+                success: function(res) {
+                  // 通过eventChannel向被打开页面传送数据
+                  //res.eventChannel.emit('acceptDataFromOpenerPage', { data: this.data.openid })
+                }
+              })
+            }
+            else{
+              that.setData({
+                hasUserInfo:true
+              })
+              console.log(that.data.hasUserInfo)
+            }
           }
         })
-        if(this.data.indatabase==false){
-          wx.navigateTo({
-            url: '../register/register',
-            events: {
-              // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
-              acceptDataFromOpenedPage: function(data) {
-                console.log(data)
-              },
-              someEvent: function(data) {
-                console.log(data)
-              }
-            },
-            success: function(res) {
-              // 通过eventChannel向被打开页面传送数据
-              //res.eventChannel.emit('acceptDataFromOpenerPage', { data: this.data.openid })
-            }
-          })
-        }
+
+        console.log(this.data.hasUserInfo)
       }
     })
   },
@@ -240,4 +289,36 @@ Page({
     })
   },
 
+  score:function(e){
+    var that=this;
+    for(var i=0;i<that.data.stars.length;i++){
+      var allItem = 'stars['+i+'].flag';
+      that.setData({
+        [allItem]: 1
+      })
+    }
+    var index=e.currentTarget.dataset.index;
+    for(var i=0;i<=index;i++){
+      var item = 'stars['+i+'].flag';
+      that.setData({
+        [item]:2,
+        index:index+1,
+      })
+    }
+  },
+  bindFormsubmit:function(e)
+ {
+   if ((e.detail.value.textarea)!="")
+   {
+     arrayincp.push(e.detail.value.textarea)
+     this.setData({
+       array: arrayincp,
+       input: false,
+       condition1: true,
+       condition2: false,
+       nav1: "nav1",
+       nav2: "nav2"
+   })
+   }
+  }
 })
