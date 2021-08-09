@@ -72,7 +72,6 @@
           </label>
           </view>
         </mp-cells>
-
         <view class="weui-btn-area">
           <button class="weui-btn" type="primary" bindtap="submitForm" disabled='{{btn_disabled}}'>确定提交</button>
         </view>
