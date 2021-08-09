@@ -1,14 +1,35 @@
+.container{
+  background-color: #eeeeee;
+}
 .title{
   text-align: center;
+  color:rgb(138, 99, 62);
+  font-size: larger;
+  margin-top: 10px;
+}
+.instruction{
+  margin-left: 10%;
+  margin-right: 15%;
+  margin-top: 15px;
+  font-size: smaller;
 }
 .options{
-  width: 100%;
+  margin-left: 15%;
+  font-size: small;
+  width: 50%;
 }
 .question{
-  width: 320px;
-  text-align: left;
+  margin-left: 10%;
+  color:rgb(138, 99, 62);
+  margin-top: 15px;
 }
 .question-option{
   width: 320px;
-  margin: 0px;
+}
+.submit{
+  margin-top: 30px;
+  color: #06ae56;    
+  background-color: transparent;
+  border: 1px solid #1aad19;
+  border-color: #179c16;  
 }

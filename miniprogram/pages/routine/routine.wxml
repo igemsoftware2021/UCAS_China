@@ -1,15 +1,17 @@
-
 <view class="container">
   <form action="submit" bindsubmit="onSubmit">
  <!--标题，可能可以配个图-->
     <view class="title">
-      <text>日常习惯填写</text>
+      日常习惯填写
      </view>
+     <view class="instruction">
+      在本页，我们将会收集一些关于您日常习惯的数据，以便我们的咖啡因算法更好地符合您的个人情况。
+    </view>
  <!--表格主体-->
     <view class="table-body">
       <!--一个问题和其对应的选项-->
       <view class="question">
-        1.每日睡眠时间
+        <text> 1.每日睡眠时间</text>
       </view>
       <view class="optionarea">
         <radio-group class="matters" bindchange="sleepChange">
@@ -21,7 +23,7 @@
     </view>
       <!--一个问题和其对应的选项-->
     <view class="question">
-      2.每日运动时间
+        2.每日运动时间
     </view>
     <view class="optionarea">
       <radio-group class="matters" bindchange="sportChange">
