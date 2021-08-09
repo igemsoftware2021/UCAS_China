@@ -8,6 +8,6 @@
 <view class="title">
 <text>关注我们</text></view>
 <view>
-<image style="width: 100vw;height:380px;background-color;#eeeeee" mode="aspectFill"
-src="../help_coffee_detail_images/公众号二维码.jpg"></image>
+<image class="image" mode="widthFix"
+src="../help_coffee_detail_images/公众号二维码.png"></image>
 </view>
