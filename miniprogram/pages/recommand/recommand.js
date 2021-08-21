@@ -40,7 +40,14 @@ Page({
         bgImg: "../../images/home/stars_inactive.png",
         bgfImg:"../../images/home/stars_active.png"
       },
-    ]
+    ],
+    amount_eval_text:['高','正好','低'],
+    amount_eval_val:[0,1,2],
+    amount_eval_final:0,
+    recommand_feedback:{},
+    time:0,
+    raw_stars:0,
+    raw_amount_eval:0
   },
 
   onLoad: function() {
@@ -167,19 +174,42 @@ Page({
       })
     }
   },
+  amount_eval:function(e){
+    console.log(e.detail.value)
+    this.setData({
+      amount_eval_final:e.detail.value
+    })
+  },
   bindFormsubmit:function(e)
- {
-   if ((e.detail.value.textarea)!="")
-   {
-     arrayincp.push(e.detail.value.textarea)
-     this.setData({
-       array: arrayincp,
-       input: false,
-       condition1: true,
-       condition2: false,
-       nav1: "nav1",
-       nav2: "nav2"
-   })
-   }
+  {
+    const db = wx.cloud.database()
+    db.collection('users').doc(app.globalData.openid).get({
+      success: function(res) {
+        this.setData({
+          time:res.data.recommand_feedback.time,
+          raw_amount_eval:res.data.recommand_feedback.amount_eval,
+          raw_stars:res.data.recommand_feedback.amount_eval
+        })
+      }
+    })
+    console.log(this.data.time,this.data.raw_amount_eval,this.data.raw_stars)
+    this.data.time+=1
+    this.data.raw_amount_eval=Math.ceil((this.data.raw_amount_eval*(this.data.time-1)+this.data.amount_eval_final)/this.data.time)
+    this.data.raw_stars=Math.ceil((this.data.raw_stars*(this.data.time-1)+this.data.index)/this.data.time)
+    this.setData({
+      [`recommand_feedback.time`]:this.data.time,
+      [`recommand_feedback.stars`]:this.data.raw_stars,
+      [`recommand_feedback.ammount_eval`]:this.data.raw_amount_eval
+    })
+    console.log(this.data.recommand_feedback)
+    db.collection('users').doc(app.globalData.openid).update({
+      data:{
+        recommand_feedback:this.data.recommand_feedback
+      },
+      success: function(res) {
+        console.log("recommand_feedback added")
+        console.log(this.data.recommand_feedback)
+      }
+    })
   }
 })

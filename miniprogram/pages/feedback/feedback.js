@@ -1,9 +1,12 @@
+const app = getApp()
+
 Page({
   data: {
     index:0,
     texts:"",
     min:5, //最少字数
     max: 200,
+    input:"",
     tempFilePaths: [],   //最大字数
   stars:[
     {
@@ -31,7 +34,14 @@ Page({
       bgImg: "../../images/home/stars_inactive.png",
       bgfImg:"../../images/home/stars_active.png"
     },
-  ]},
+  ],
+  app_feedback:{
+    time:0,
+    stars:0,
+    text:""
+  },
+  raw_stars:0
+},
   score:function(e){
     var that=this;
     for(var i=0;i<that.data.stars.length;i++){
@@ -49,27 +59,16 @@ Page({
       })
     }
   },
-  bindFormsubmit:function(e)
- {
-   if ((e.detail.value.textarea)!="")
-   {
-     arrayincp.push(e.detail.value.textarea)
-     this.setData({
-       array: arrayincp,
-       input: false,
-       condition1: true,
-       condition2: false,
-       nav1: "nav1",
-       nav2: "nav2"
-   })
-   }
-},
   /**
    * 字数限制
    */ 
   inputs: function (e) {
     // 获取输入框的内容
     var value = e.detail.value;
+    console.log(value)
+    this.setData({
+      input:value
+    })
     // 获取输入框内容的长度
     var len = parseInt(value.length);
     //最少字数限制
@@ -188,6 +187,36 @@ Page({
         that.setData({
           tempFilePaths
         });
+      }
+    })
+  },
+  bindFormsubmit:function(e)
+  {
+    console.log(e.detail)
+    const db = wx.cloud.database()
+    db.collection('users').doc(app.globalData.openid).get({
+      success: function(res) {
+        this.setData({
+          [`app_feedback.time`]:res.data.app_feedback.time,
+          raw_stars:res.data.app_feedback.stars
+        })
+      }
+    })
+    this.data.app_feedback.time+=1
+    this.data.raw_stars=Math.ceil((this.data.raw_stars*(this.data.app_feedback.time-1)+this.data.index)/this.data.app_feedback.time)
+    this.setData({
+      [`app_feedback.time`]:this.data.app_feedback.time,
+      [`app_feedback.stars`]:this.data.raw_stars,
+      [`app_feedback.text`]:this.data.input
+    })
+    console.log(this.data.app_feedback)
+    db.collection('users').doc(app.globalData.openid).update({
+      data:{
+        app_feedback:this.data.app_feedback
+      },
+      success: function(res) {
+        console.log("app_feedback added")
+        console.log(this.data.app_feedback)
       }
     })
   }
