@@ -90,6 +90,16 @@
         </view>
         <view class="stars-num">
           <text class="stars-num-text">{{index}}星</text></view>
+        
+        <view class="amount-eval">
+          <view class="amount-eval-text">本次推荐量:</view>
+          <radio-group class="amount-eval-radio-group" bindchange="amount_eval">
+            <view class="amount-eval-radio-block" wx:for="{{amount_eval_text}}" wx:key="index">
+              <radio value="{{amount_eval_val[index]}}"></radio>
+              <text class="amount-eval-radio-text">{{amount_eval_text[index]}}</text>
+            </view>
+          </radio-group>
+        </view>
       </view>
     </view>
     <form bindsubmit='bindFormsubmit'>

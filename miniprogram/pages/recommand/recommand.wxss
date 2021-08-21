@@ -289,7 +289,7 @@ page {
 }
 
 .stars{
-  height: 30vh;
+  height: 37vh;
   margin: 20px;
   display: flex;
   flex-direction: column;
@@ -318,6 +318,21 @@ page {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.amount-eval{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.amount-eval-radio-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.amount-eval-radio-block{
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
 .submit{
