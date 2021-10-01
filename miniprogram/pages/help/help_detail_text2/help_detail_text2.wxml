@@ -1,7 +1,7 @@
 <!--pages/help/help_detail4.wxml-->
 <view class="content">
   <view class="head">
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="widthFix" src="../help_coffee_detail_images/coffee_top.png"></image>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="widthFix" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/coffee_top.png"></image>
   </view>
         <view class="author-date"> 
             <text class="date">logo 2021年6月 转自知乎</text>
@@ -14,7 +14,7 @@
         <view ><text class="article-content">
 关于咖啡的起源，坊间有很多传说。目前广为流传的，是牧羊人的故事。传说有一个名叫卡尔迪的牧羊人某日去放羊，发现羊群里的羊在吃了一种红色的浆果后会变得异常兴奋，卡尔迪出于好奇尝了一些，发现这些果子香甜美味，且食用后会变得神清气爽。</text>
 
-   <image class="image" mode="widthFix" src="../help_coffee_detail_images/text2.2.png"></image>
+   <image class="image" mode="widthFix" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/text2.2.png"></image>
     <text  class="article-content">
     随后，他把这些果子带回家，分给邻居们品尝。红色浆果的神奇功效也渐渐的被大家所了解。这种红色浆果就是咖啡果。也叫coffee cherry
 </text>
@@ -31,7 +31,7 @@
         <text class="article-content">
 原产地为埃塞俄比亚的阿拉比卡咖啡树，其咖啡豆产量占到全世界产量的70%，阿拉比卡种的咖啡树适合种植在昼夜温差大的高山，理想海拔高度在500米-2000米，海拔越高，品质越好。罗布斯塔原产于非洲的刚果，产量约占世界范围内的20%-30%，罗布斯塔适合种植在海拔500米以下的低海拔地区。不需要太多的人工照顾，是一种比较容易栽培的咖啡树种。
 </text>
-<image class="image" mode="widthFix" src='../help_coffee_detail_images/text2.5.png'></image>
+<image class="image" mode="widthFix" src='http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/text2.5.png'></image>
 <view class="article-text">
   3、咖啡因含量
 </view>
@@ -42,7 +42,7 @@
 
 作为精品咖啡豆的阿拉比卡，咖啡因含量较低。而作为商业用途的罗布斯塔咖啡豆的咖啡因含量是阿拉比卡的两倍。
 </text>
-<image class="image" mode="widthFix" src='../help_coffee_detail_images/text2.6.png'></image>
+<image class="image" mode="widthFix" src='http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/text2.6.png'></image>
 <view class="article-text">
   4、咖啡豆分级
 </view>
@@ -52,7 +52,7 @@
 除了阿拉比卡和罗布斯塔的常规用途以外，对于先天条件较好的阿拉比卡咖啡豆，也会进行评级。专业的咖啡品鉴师们会根据干湿香气、风味、酸度、余韵、甜度、醇厚度、干净度、一致性、平衡感等10个维度为一支咖啡进行打分。分值在80分以下的为商业级，80分以上为精品级、90分以上是赛事级。以此来帮助咖农更好的优化种植、采收及初加工处理环节。
 
 </text>
-<image class="image" mode="widthFix" src='../help_coffee_detail_images/text2.7.png'></image>
+<image class="image" mode="widthFix" src='http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/text2.7.png'></image>
 <text class="article-content">
 免责声明：
 以上文章转载自网络
