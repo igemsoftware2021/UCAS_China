@@ -17,28 +17,28 @@ Page({
     stars:[
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
     ],
     amount_eval_text:['高','正好','低'],

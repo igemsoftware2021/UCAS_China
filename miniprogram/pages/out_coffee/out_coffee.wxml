@@ -1,7 +1,7 @@
 <!--pages/out_coffee/out_coffee.wxml-->
 <view class="container">
   <view>
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg"></image>
   </view>
   <view class="recommand-amount">
     <view class="recommand-amount-time">当前时间：{{time}}</view>

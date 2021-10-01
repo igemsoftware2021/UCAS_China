@@ -34,7 +34,7 @@
     <view class="team-members"></view>
   </view>
   <view class="versions">
-    <image src="../../images/home/user_1.png"></image>
+    <image src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/user_1.png"></image>
     <view class="app-name">Caffein-monitor</view>
     <view class="version">V 1.1.1</view>
   </view>

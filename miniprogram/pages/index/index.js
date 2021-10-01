@@ -14,23 +14,23 @@ Page({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl'), // 如需尝试获取用户信息可改为false
     list: [{
       "text": "推荐",
-      "iconPath": "../../../images/tabbar/coffee_inactive.png",
-      "selectedIconPath": "../../../images/tabbar/coffee_active.png",
+      "iconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/coffee_inactive.png",
+      "selectedIconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/coffee_active.png",
       /*dot: true*/
     },
     {
       "text": "记录",
-      "iconPath": "../../../images/tabbar/record_inactive.png",
-      "selectedIconPath": "../../../images/tabbar/record_active.png",
+      "iconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/record_inactive.png",
+      "selectedIconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/record_active.png",
       /*badge: 'New'*/
     },
     {
       "text": "个人中心",
-      "iconPath": "../../../images/tabbar/person_inactive.png",
-      "selectedIconPath": "../../../images/tabbar/person_active.png",
+      "iconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/person_inactive.png",
+      "selectedIconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/person_active.png",
       /*badge: 'New'*/
     }],
-    src:"../../images/topimage/cafe.jpeg",
+    src:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg",
     openid:'',
     session:'',
     indatabase:false,
@@ -38,28 +38,28 @@ Page({
     stars:[
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
       {
         flag:1,
-        bgImg: "../../images/home/stars_inactive.png",
-        bgfImg:"../../images/home/stars_active.png"
+        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
+        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
       },
     ],
     recom_amount:0
