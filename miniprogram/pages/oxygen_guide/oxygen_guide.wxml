@@ -1,0 +1,9 @@
+<view class="container">
+  <view>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+  </view>
+  <text class="info">如果您有本小程序支持的手环，请点击如下按钮，我们会根据手环数据分析您的睡眠质量</text>
+  <button class='button' bindtap='jump'>我有手环信息接入</button>
+  <text class="info2">您还可以通过手动录入信息得到您的睡眠质量分析结果</text>
+  <button class='button' bindtap='nojump'>我需要手动录入</button>
+</view>

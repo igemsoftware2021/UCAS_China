@@ -4,3 +4,10 @@ page {
   flex-direction: column;
   justify-content: flex-start;
 }
+.content{
+  text-align-last: center;
+}
+.content2{
+  text-align-last: center;
+  color: grey;
+}

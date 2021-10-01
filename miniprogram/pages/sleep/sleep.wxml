@@ -1,3 +1,3 @@
 <canvas canvas-id="pieCanvas" disable-scroll="true" class="pieCanvas" style="width:400px; height:400px;"></canvas>
-<text>2021年6月12日</text>
-<text>睡眠时长：7小时42分钟</text>
+<text class="content">睡眠分析样例数据</text>
+<text class="content2">**以上数据由xxx手环提供**</text> 

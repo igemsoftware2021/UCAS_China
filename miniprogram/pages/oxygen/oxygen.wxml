@@ -1,4 +1,4 @@
-<text>血氧饱和度·SPO2</text>
 <canvas canvas-id="columnCanvas" disable-scroll="true" class="columnCanva" style="width:400px; height:400px;"></canvas>
-<text>2021年6月12日</text>
-<text>血氧范围：90-99%</text>
+<text class="content">血样分析样例数据</text>
+<text class="content">血氧范围：90-99%</text>
+<text class="content2">**以上数据由xxx手环提供**</text>

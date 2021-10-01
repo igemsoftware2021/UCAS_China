@@ -15,21 +15,21 @@ Page({
       {
         id:0,
         text:'睡眠',
-        url:'/pages/sleep/sleep',
+        url:'/pages/sleep_guide/sleep_guide',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/sleep.png',
         figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/sleep.png'
       },{
         id:1,
         text:'心率',
-        url:'/pages/heartrate/heartrate',
+        url:'/pages/heartrate_guide/heartrate_guide',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/heartrate.png',
         figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/heartrate.png'
       },{
         id:2,
         text:'心血氧饱和度',
-        url:'/pages/oxygen/oxygen',
+        url:'/pages/oxygen_guide/oxygen_guide',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/oxygen.png',
         figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/oxygen.png'
