@@ -1,7 +1,7 @@
 <!--pages/help/help_detail2.wxml-->
 <view class="container">
   <view class="head">
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../help_coffee_detail_images/coffee_top.png"></image>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/coffee_top.png"></image>
   </view>
 </view>
 <view class="title">
@@ -10,5 +10,5 @@
   </text></view>
 <view>
 <image class="image"
-src="../help_coffee_detail_images/版本信息.png"></image>
+src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/版本信息.png"></image>
 </view>
