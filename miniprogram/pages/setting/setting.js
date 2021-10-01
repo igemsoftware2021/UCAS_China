@@ -1,6 +1,28 @@
 //index.js
 const app = getApp()
 Page({
+    data:{
+      info:[
+        {keys:"age",value:"19"},
+        {keys:"gender",value:"0"},
+        {keys:"height",value:"185"},
+        {keys:"liver",value:"1"},
+        {keys:"weight",value:"61"},
+      ],
+      objectArray: [
+        {id: 5, unique: 'unique_5'},
+        {id: 4, unique: 'unique_4'},
+        {id: 3, unique: 'unique_3'},
+        {id: 2, unique: 'unique_2'},
+        {id: 1, unique: 'unique_1'},
+        {id: 0, unique: 'unique_0'},
+      ],
+      isChecked1:true,
+      isChecked2:true,
+      isChecked3:true,
+      isChecked4:true,
+      btn_disabled:false
+    },
     titleClick: function (e) {
         let currentPageIndex =
           this.setData({
@@ -17,14 +39,7 @@ Page({
           })
         }
       },
-     
-        data:{
-          isChecked1:true,
-          isChecked2:true,
-          isChecked3:true,
-          isChecked4:true,
-          btn_disabled:false
-        },
+
 
       changeSwitch1:function(e){
         console.log(e.detail.value)
@@ -42,6 +57,47 @@ Page({
   data:{},
 
   onLoad:function(){
-    
+    var that = this
+    const db = wx.cloud.database()
+    db.collection('users').doc(app.globalData.openid).get({
+      success: function(res) {
+        console.log(res.data.basic_arg)
+        var value = Object.values(res.data.basic_arg)
+        var tmp = [
+          {keys:"age",value:"19"},
+          {keys:"gender",value:"0"},
+          {keys:"height",value:"185"},
+          {keys:"liver",value:"1"},
+          {keys:"weight",value:"61"},
+        ]
+        for(var i = 0; i< value.length-1;i+=1){
+          tmp[i].value = value[i]
+        }
+        console.log(tmp)
+        that.setData({
+          info:tmp
+        })
+        console.log(tmp)
+        console.log(info)
+      }
+    })
+  },
+  submitForm:function(){
+    var keys = []
+    var value = []
+    for(i in this.data.info){
+      keys.push(i.keys)
+      value.push(i.value)
+    }
+    var tmp = dict(zip(keys, value))
+    const db = wx.cloud.database()
+    db.collection('users').doc(app.globalData.openid).update({
+      data:{
+        basic_arg:tmp
+      },
+      success: function(res) {
+        console.log("modify personal info")
+      }
+    })
   }
 })  
