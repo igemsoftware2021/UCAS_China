@@ -34,7 +34,7 @@
   border-radius:10rpx;
   margin-left:30rpx;
   margin-right: 30rpx;
-  margin-top: 10%;
+  margin-top: 15%;
   margin-bottom: 5%;
   z-index:999;
 }

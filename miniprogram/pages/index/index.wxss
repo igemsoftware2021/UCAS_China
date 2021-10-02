@@ -71,6 +71,3 @@ button{
   flex-direction: row;
   justify-content: center;
 }
-.evaluate-word-text{
-
-}
