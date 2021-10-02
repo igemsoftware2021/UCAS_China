@@ -47,7 +47,9 @@ page {
   .name.right{
     flex:auto;
   }
-
+  .input{
+    padding-left: 20px;
+  }
   .title-sel {
     color: #121418;
     font-size: 32rpx;

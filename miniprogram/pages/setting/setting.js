@@ -2,13 +2,6 @@
 const app = getApp()
 Page({
     data:{
-      info:[
-        {keys:"age",value:"19"},
-        {keys:"gender",value:"0"},
-        {keys:"height",value:"185"},
-        {keys:"liver",value:"1"},
-        {keys:"weight",value:"61"},
-      ],
       objectArray: [
         {id: 5, unique: 'unique_5'},
         {id: 4, unique: 'unique_4'},
@@ -61,7 +54,6 @@ Page({
     const db = wx.cloud.database()
     db.collection('users').doc(app.globalData.openid).get({
       success: function(res) {
-        console.log(res.data.basic_arg)
         var value = Object.values(res.data.basic_arg)
         var tmp = [
           {keys:"age",value:"19"},
@@ -73,23 +65,28 @@ Page({
         for(var i = 0; i< value.length-1;i+=1){
           tmp[i].value = value[i]
         }
-        console.log(tmp)
         that.setData({
           info:tmp
         })
-        console.log(tmp)
-        console.log(info)
+        console.log(that.data.info)
       }
     })
   },
   submitForm:function(){
     var keys = []
     var value = []
-    for(i in this.data.info){
+    console.log(this.data.info)
+    for(var i in this.data.info){
       keys.push(i.keys)
       value.push(i.value)
     }
-    var tmp = dict(zip(keys, value))
+    console.log(this.data.info)
+    console.log(keys)
+    var tmp = {}
+    for(var i = 0; i < keys.length - 1; i+=1){
+      tmp[keys[i]] = value[i]
+    }
+    console.log(tmp)
     const db = wx.cloud.database()
     db.collection('users').doc(app.globalData.openid).update({
       data:{

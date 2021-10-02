@@ -9,7 +9,7 @@
       <text class="num-text-text">当前咖啡摄入量最佳范围：</text>
     </view>
     <view class="num-number">
-      <text class="num-number-text">{{coffee_bestscale_up}}~{{coffee_bestscale_low}}</text>
+      <text class="num-number-text">{{coffee_bestscale_low}}~{{coffee_bestscale_up}}</text>
     </view>
   </view>
 
