@@ -24,8 +24,9 @@ Page({
         text:'蓝牙',
         url:'/pages/bluetooth/bluetooth',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/setting_active.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/setting_inactive.png'
+        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/bluetooth_active.png',
+        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/bluetooth_inactive.png'
+
       },{
         id:2,
         text:'咖啡饮用分析',
