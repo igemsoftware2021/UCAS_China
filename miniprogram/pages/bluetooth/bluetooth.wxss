@@ -1,0 +1,50 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+  color: gray;
+}
+.button {
+  font-size: 30rpx;
+  background: #010101;
+  bottom: 35rpx;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  
+  color: #fff;
+  border-radius:10rpx;
+  margin-left:30rpx;
+  margin-right: 30rpx;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  z-index:999;
+}
+
+.button2 {
+  font-size: 30rpx;
+  background: rgb(180, 139, 100);
+  bottom: 35rpx;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  
+  color: #fff;
+  border-radius:10rpx;
+  margin-left:30rpx;
+  margin-right: 30rpx;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  z-index:999;
+}
+.info{
+  background-color: rgba(224, 224, 224, 0.5);
+}
+.device{
+  text-align: center;
+}
+
+.content{
+  margin-left: 5%;
+}

@@ -1,0 +1,16 @@
+<view>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+</view>
+<view class="intro">To find HC08 and connect...</view>
+<button class='button' bindtap="getTemp">发送获取温度命令</button>
+<button class='button'  bindtap="getVolu">发送获取体积命令</button>
+<button class='button'  bindtap="getConc">发送获取浓度命令</button>
+<view class="info">
+  <view class="content">得到的字符串：{{receive}}</view>
+  <view class="content">notifyId:{{notifyId}}</view>
+  <view class="content">{{bug}}</view>
+</view>
+<button class='button2' bindtap="startAll">开始连接</button>
+<view class="device">有{{number}}个设备</view>
+<view class="device">{{myDevice}}</view>
+<view class="device">{{consoleLog}}</view>
