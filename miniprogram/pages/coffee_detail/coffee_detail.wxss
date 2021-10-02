@@ -1,1 +1,5 @@
 /* pages/coffee_detail/coffee_detail.wxss */
+.intro {
+  margin: 30px;
+  text-align: center;
+}
