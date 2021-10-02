@@ -31,7 +31,7 @@
                 <view>{{item.keys}}</view>
             </view>
             <view class="right">
-                <input class="input"  placeholder="          {{item.value}}"/>
+                <input class="input"  placeholder="{{item.value}}"/>
             </view>
         </view>
         <view class="weui-btn-area">

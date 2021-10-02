@@ -47,7 +47,9 @@ Page({
     recommand_feedback:{},
     time:0,
     raw_stars:0,
-    raw_amount_eval:0
+    raw_amount_eval:0,
+    coffee_bestscale_up:0,
+    coffee_bestscale_low:0
   },
 
   onLoad: function() {
@@ -61,6 +63,21 @@ Page({
       this.setData({
         canIUseGetUserProfile: true,
       })
+      console.log("hit")
+      var myDate = new Date();
+      var getHours = myDate.getHours()
+      var hours = 12-getHours
+      if(getHours>12){
+        hours = 18-getHours
+      }
+      else if(getHours>18){
+        hours = 23 - getHours
+      }
+      this.setData({
+        coffee_bestscale_up: 0.36-0.35*hours/7+0.01,
+        coffee_bestscale_low: 0.36-0.36*hours/7-0.01
+      })
+      console.log(coffee_bestscale_up,coffee_bestscale_low)
     }
   },
 

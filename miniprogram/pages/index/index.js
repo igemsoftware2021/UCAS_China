@@ -190,6 +190,19 @@ Page({
                 hasUserInfo:true
               })
               console.log(that.data.hasUserInfo)
+              var myDate = new Date();
+              var getHours = myDate.getHours()
+              var hours = 12-getHours
+              if(getHours>12){
+                hours = 18-getHours
+              }
+              else if(getHours>18){
+                hours = 23 - getHours
+              }
+              that.setData({
+                recom_amount: 0.36-0.36*hours/7
+              })
+              console.log(hours,recom_amount)
             }
           }
         })
@@ -217,6 +230,18 @@ Page({
       app.globalData.hasUserInfo=this.data.hasUserInfo
       app.globalData.canIUseGetUserProfile=this.data.canIUseGetUserProfile
       console.log(this.data.userInfo)
+      var myDate = new Date();
+      var getHours = myDate.getHours()
+      var hours = 12-getHours
+      if(getHours>12){
+        hours = 18-getHours
+      }
+      else if(getHours>18){
+        hours = 23 - getHours
+      }
+      this.setData({
+        recom_amount: 0.36-0.36*hours/7
+      })
     }
   },
 
