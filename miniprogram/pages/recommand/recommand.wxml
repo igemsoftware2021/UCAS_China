@@ -54,7 +54,7 @@
               <radio value="{{choice}}"></radio>
               <text class="head-left-text">Use the hardware provided by UCAS-China</text>
             </view>
-            <navigator class="head-right-nav" url="../coffee_detail/coffee_detail">
+            <navigator class="head-right-nav" url="../bluetooth/bluetooth">
               <text class="head-right-text">>>>View usage details</text>
             </navigator>
           </view>
