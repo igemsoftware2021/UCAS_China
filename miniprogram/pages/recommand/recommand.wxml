@@ -6,7 +6,7 @@
 
   <view class="num">
     <view class="num-text">
-      <text class="num-text-text">当前咖啡摄入量最佳范围：</text>
+      <text class="num-text-text">Current optimal range of coffee intake: </text>
     </view>
     <view class="num-number">
       <text class="num-number-text">{{coffee_bestscale_low}}~{{coffee_bestscale_up}}</text>
@@ -20,10 +20,10 @@
           <view class="head-item">
             <view class="head-left-item">
                 <radio value="{{choice}}"></radio>
-              <text class="head-left-text">选择市场咖啡产品</text>
+              <text class="head-left-text">Select Coffee Products in Market</text>
             </view>
             <view class="head-right-item">
-              <navigator class="head-right-nav" url="../out_coffee/out_coffee"><text class="head-right-text">>>更多选择</text></navigator>
+              <navigator class="head-right-nav" url="../out_coffee/out_coffee"><text class="head-right-text">>>More options</text></navigator>
             </view>
           </view>
           
@@ -35,7 +35,7 @@
                     <image class="pic" src="{{item.pic-src}}">
                     </image>
                     <view class="description">
-                      <text class="text">咖啡容量:{{item.contain}};咖啡因含量:{{item.caffein}}\n单价:{{item.price}}</text>
+                      <text class="text">Coffee Amount:{{item.contain}};Caffeine Amount:{{item.caffein}}</text>
                     </view>
                   </view>
                 </swiper-item>
@@ -52,10 +52,10 @@
           <view class="coffee-in-drink">
             <view class="choose-own-text">
               <radio value="{{choice}}"></radio>
-              <text class="head-left-text">使用UCAS iGem团队提供硬件</text>
+              <text class="head-left-text">Use the hardware provided by UCAS-China</text>
             </view>
             <navigator class="head-right-nav" url="../coffee_detail/coffee_detail">
-              <text class="head-right-text">>>>查看使用详情</text>
+              <text class="head-right-text">>>>View usage details</text>
             </navigator>
           </view>
 
@@ -65,7 +65,7 @@
                 <image class="pic" src="{{item.hardware-pic-src}}">
                 </image>
                 <view class="description">
-                  <text class="text">咖啡容量:{{item.contain}};咖啡因含量:{{item.caffein}}</text>
+                  <text class="text">Coffee Amount:{{item.contain}};Caffeine Amount:{{item.caffein}}</text>
                 </view>
               </view>
             </navigator>
@@ -77,22 +77,22 @@
   <!--对当前推荐评价-->
   <view class="evaluation">
     <view class="evaluate-word">
-      <text class="evaluate-word-text">请问您对此次推荐是否满意？</text>
+      <text class="evaluate-word-text">Are you satisfied with this recommendation?</text>
     </view>
     <!--采取打星的方式-->
     <view class='stars'>
       <view class='content'>
         <view class="evaluation-text">
-          <text class="evaluation-text-text">评分</text>
+          <text class="evaluation-text-text">Rating</text>
         </view>
         <view class="stars-star">
           <image class="stars-img" wx:for="{{stars}}" wx:key="index" src='{{item.flag==1?item.bgImg:item.bgfImg}}' data-index="{{index}}" bindtap='score'></image>
         </view>
         <view class="stars-num">
-          <text class="stars-num-text">{{index}}星</text></view>
+          <text class="stars-num-text">{{index}}Stars</text></view>
         
         <view class="amount-eval">
-          <view class="amount-eval-text">本次推荐量:</view>
+          <view class="amount-eval-text">This recommended volume:</view>
           <radio-group class="amount-eval-radio-group" bindchange="amount_eval">
             <view class="amount-eval-radio-block" wx:for="{{amount_eval_text}}" wx:key="index">
               <radio value="{{amount_eval_val[index]}}"></radio>
@@ -103,7 +103,7 @@
       </view>
     </view>
     <form bindsubmit='bindFormsubmit'>
-          <button  class="submit" form-type='submit'>提交</button>
+          <button  class="submit" form-type='submit'>Submit</button>
     </form>
   </view>
 </view>

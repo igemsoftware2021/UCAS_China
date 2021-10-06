@@ -41,25 +41,25 @@
   "tabBar": {
     "list": [
       {
-        "text": "记录",
+        "text": "Record",
         "pagePath": "pages/index/index",
         "iconPath": "/images/tabbar/record_inactive.png",
         "selectedIconPath": "/images/tabbar/record_active.png"
       },
       {
-        "text": "推荐",
+        "text": "Recommend",
         "pagePath": "pages/recommand/recommand",
         "iconPath": "/images/tabbar/coffee_inactive.png",
         "selectedIconPath": "/images/tabbar/coffee_active.png"
       },
       {
-        "text": "健康",
+        "text": "Health",
         "pagePath": "pages/health/health",
         "iconPath": "/images/tabbar/health_inactive.png",
         "selectedIconPath": "/images/tabbar/health_active.png"
       },
       {
-        "text": "个人中心",
+        "text": "Personal Center",
         "pagePath": "pages/home/home",
         "iconPath": "/images/tabbar/person_inactive.png",
         "selectedIconPath": "/images/tabbar/person_active.png"

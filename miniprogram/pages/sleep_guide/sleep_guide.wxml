@@ -2,8 +2,8 @@
   <view>
     <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
   </view>
-  <text class="info">如果您有本小程序支持的手环，请点击如下按钮，我们会根据手环数据分析您的睡眠质量</text>
-  <button class='button' bindtap='sleepjump'>我有手环信息接入</button>
-  <text class="info2">您还可以通过手动录入信息得到您的睡眠质量分析结果</text>
-  <button class='button' bindtap='nosleepjump'>我需要手动录入</button>
+  <text class="info">If you have a bracelet supported by this app, please click the following button, we will analyze your sleep quality based on the bracelet data</text>
+  <button class='button' bindtap='jump'>I have the bracelet</button>
+  <text class="info2">You can also get the results of your sleep quality analysis by entering the information manually</text>
+  <button class='button' bindtap='nojump'>I need to enter manually</button>
 </view>

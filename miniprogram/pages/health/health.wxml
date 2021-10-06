@@ -4,7 +4,7 @@
   <view>
     <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg"></image>
   </view>
-  <text>健康·HEALTH</text>
+  <text>HEALTH</text>
   <text>Coffee gets me excited.</text>
   <view class="navigator-group">
     <view class="naviagte-item" wx:for="{{naviagte_content}}" wx:key="id" wx:for-index="idx" wx:for-item="item">

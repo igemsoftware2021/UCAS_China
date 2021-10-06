@@ -14,14 +14,14 @@ Page({
     naviagte_content:[
       {
         id:0,
-        text:'设置',
+        text:'Setting',
         url:'/pages/setting/setting',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/setting_active.png',
         figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/setting_inactive.png'
       },{
         id:1,
-        text:'蓝牙',
+        text:'Bluetooth',
         url:'/pages/bluetooth/bluetooth',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/bluetooth_active.png',
@@ -29,35 +29,35 @@ Page({
 
       },{
         id:2,
-        text:'咖啡饮用分析',
+        text:'Coffee Drinking Analysis',
         url:'/pages/history/history',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/coffee_active.png',
         figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/coffee_inactive.png'
       },{
         id:3,
-        text:'日常习惯',
+        text:'Habits',
         url:'/pages/routine/routine',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/custom_active.png',
         figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/custom_inactive.png'
       },{
         id:4,
-        text:'帮助',
+        text:'Help',
         url:'/pages/help/help',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/help_active.png',
         figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/help_inactive.png'
       },{
         id:5,
-        text:'关于我们',
+        text:'About us',
         url:'/pages/about_us/about_us',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/about_active.png',
         figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/about_inactive.png'
       },{
         id:6,
-        text:'评分与反馈',
+        text:'Rating and Feedback',
         url:'/pages/feedback/feedback',
         active:0,
         figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/feedback_active.png',
