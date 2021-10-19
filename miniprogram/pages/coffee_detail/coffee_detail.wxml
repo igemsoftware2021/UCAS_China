@@ -1,26 +1,16 @@
-<!--pages/coffee_detail/coffee_detail.wxml-->
-
-<view class="container">
-  <view class="head">
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg"></image>
-  </view>
-  
-  <view class="blue-tooth">
-    <view class="intro">可以单独作为一个蓝牙连接的页面.得到的字符串叫</view>
-    <view class="intro">To find HC08（现在看来微信小程序也并不支持这个模块） and connect.</view>
-    <view>取消了发送所需的字符串，直接使用函数发送命令</view>
-    <button bindtap="getTemp">发送获取温度命令</button>
-    <button bindtap="getVolu">发送获取体积命令</button>
-    <button bindtap="getConc">发送获取浓度命令</button>
-
-    <view>得到的字符串：{{receive}}</view>
-
-    <view>notifyId:{{notifyId}}</view>
-    <view>{{bug}}</view>
-    <button bindtap="startAll">开始连接</button>
-    <view>有{{number}}个设备</view>
-    <view>{{myDevice}}</view>
-    <view>{{consoleLog}}</view>
-
-  </view>
+<view>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
 </view>
+<view class="intro">To find HC08 and connect...</view>
+<button class='button' bindtap="getTemp">Get Temperature</button>
+<button class='button'  bindtap="getVolu">Get Volume</button>
+<button class='button'  bindtap="getConc">Get Concentration</button>
+<view class="info">
+  <view class="content">The obtained string.：{{receive}}</view>
+  <view class="content">notifyId:{{notifyId}}</view>
+  <view class="content">{{bug}}</view>
+</view>
+<button class='button2' bindtap="startAll">Start Connection</button>
+<view class="device">{{number}} devices paired</view>
+<view class="device">{{myDevice}}</view>
+<view class="device">{{consoleLog}}</view>
