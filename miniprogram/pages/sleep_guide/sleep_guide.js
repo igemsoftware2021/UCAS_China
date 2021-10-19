@@ -1,11 +1,11 @@
 
 Page({
-  sleepjump(){
+  jump(){
     wx.navigateTo({
       url: '/pages/sleep/sleep',
     })
   },
-  nosleepjump(){
+  nojump(){
     wx.navigateTo({
       url: '/pages/routine/routine',
     })

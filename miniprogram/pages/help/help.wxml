@@ -4,7 +4,7 @@
     <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg"></image>
   </view>
   <view class="title">
-    <text class="title-text">帮助中心</text>
+    <text class="title-text">Help Center</text>
   </view>
   <view class="part">
     <view class="subtitle">
@@ -34,23 +34,42 @@
       <!--Tab布局-->
       <view class='title'>
         <view class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='0'>
-          <text>公告专栏</text>
+          <text>Consult</text>
+          <hr class="line-style" />
+        </view>
+        <view class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='1'>
+          <text>Help</text>
           <hr class="line-style"/>
         </view>
         
-        <view class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='1'>
-          <text>健康贴士</text>
+        <view class="{{2 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='2'>
+          <text>Health Tips</text>
           <hr class="line-style"/>
         </view>
-        <view class="{{2 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='2'>
-          <text>咨询服务</text>
-          <hr class="line-style" />
-        </view>
+        
       </view>
 
 
       <!--内容布局-->
       <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
+        
+        <swiper-item class='swiper' class='swiper'>
+          <view wx:for="{{thirdList}}" wx:for-item="item" class='record-item'>
+           <view class='name'
+           bindtap='buttonclick6'>
+              <span>Platform QR Code</span>
+            </view>
+            <view class='name'>
+            <contact-button>
+              Online Customer Service
+            </contact-button>
+            </view>
+            <view class='name'>
+              <span>Service Tel--{{item.name}}</span>
+            </view> 
+            
+          </view>
+        </swiper-item>
         <swiper-item class='swiper'>
           <view wx:for="{{firstList}}" wx:for-item="item" class="record-item">
           <view class='name' bindtap="buttonclick">
@@ -58,45 +77,27 @@
               <span>Caffein-moniter</span>
               </view>
             </view>
-            <view class='name'
-            bindtap="buttonclick1"> 
-            <span>使用方法</span>
+            <view class='name' bindtap="buttonclick1"> 
+             <span>How to use</span>
             </view>
-           <view class='name'
-           bindtap='buttonclick2' ><span>版本更新</span></view>
+           <view class='name' bindtap='buttonclick2' >
+             <span>Update</span></view>
           </view>
         </swiper-item>
         <swiper-item class='swiper' class='swiper'>
           <view wx:for="{{secondList}}" wx:for-item="item" class='record-item'>
             <view class='name'
             bindtap='buttonclick3'>
-              <span>当咖啡与健康相遇</span> 
+              <span>When coffee and health meet</span> 
             </view>
             <view class='name'
             bindtap='buttonclick4'>
-              <span>咖啡因的前世今生</span> 
+              <span>The story of caffeine</span> 
             </view>
             <view class='name'
             bindtap='buttonclick5'>
-              <span>防弹饮食计划</span> 
+              <span>Bulletproof Diet Plan</span> 
             </view>
-          </view>
-        </swiper-item>
-        <swiper-item class='swiper' class='swiper'>
-          <view wx:for="{{thirdList}}" wx:for-item="item" class='record-item'>
-           <view class='name'
-           bindtap='buttonclick6'>
-              <span>平台二维码</span>
-            </view>
-            <view class='name'>
-            <contact-button>
-            在线客服
-            </contact-button>
-            </view>
-            <view class='name'>
-              <span>客服电话--{{item.name}}</span>
-            </view> 
-            
           </view>
         </swiper-item>
       </swiper>

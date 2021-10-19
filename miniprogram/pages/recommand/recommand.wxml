@@ -23,7 +23,7 @@
               <text class="head-left-text">Select Coffee Products in Market</text>
             </view>
             <view class="head-right-item">
-              <navigator class="head-right-nav" url="../out_coffee/out_coffee"><text class="head-right-text">>>More options</text></navigator>
+              <navigator class="head-right-nav" url="../help/help"><text class="head-right-text">>>More options</text></navigator>
             </view>
           </view>
           

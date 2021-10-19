@@ -11,3 +11,11 @@ page {
   text-align-last: center;
   color: grey;
 }
+.pieCanvas{
+  width:400px;
+  height:400px;
+  margin-top: 20%;
+  margin-right: 20%;
+  margin:0 auto;
+  text-align: center;
+}

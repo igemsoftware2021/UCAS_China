@@ -31,23 +31,23 @@ Page({
       categories: [ '00:00', '03:00', '06:00', '09:00', '12:00', '15:00', '18:00', '21:00'],
       animation: true,
       series: [{
-      name: '心率',
+      name: 'Heartrate',
       data: [ 60, 50, 42, 75, 80, 70, 82, 65],
       format: function (val, name) {
-      return val.toFixed( 2) + '次/分';
+      return val.toFixed( 2) + 'beats per minute';
       }
       }, {
-      name: '过高心率',
+      name: 'Excessive Heartrate',
       data: [ null, 90, 87, null, null, 85, 112, 75],
       format: function (val, name) {
-      return val.toFixed( 2) + '次/分';
+      return val.toFixed( 2) + 'beats per minute';
       } 
       }],
       xAxis: {
       disableGrid: true
       },
       yAxis: {
-      title: '心率（次/分）',
+      title: 'Heartrate（beats/minute）',
       format: function (val) {
       return val.toFixed( 2);
       },

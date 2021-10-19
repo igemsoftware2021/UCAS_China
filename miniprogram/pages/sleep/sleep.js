@@ -30,13 +30,13 @@ Page({
       canvasId: 'pieCanvas',
       type: 'pie',
       series: [{
-      name: '深睡',
+      name: 'Deep Sleep',
       data: 2,
       }, {
-      name: '浅睡',
+      name: 'Light Sleep',
       data: 3,
       }, {
-      name: '快速眼动',
+      name: 'REM',
       data: 1,
       }],
       width: 400,

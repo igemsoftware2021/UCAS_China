@@ -7,18 +7,18 @@ Page({
   // 各选项的值和名称（一开始value和name顺序打反了懒得改了X）
   data: {
     sleepTime: [
-      {value: '0', name: '不足4小时'},
-      {value: '1', name: '4-6小时'},
-      {value: '2', name: '6-7小时'},
-      {value: '3', name: '7-8小时'},
-      {value: '4', name: '8小时以上'},
+      {value: '0', name: '< 4 hours'},
+      {value: '1', name: '4-6 hours'},
+      {value: '2', name: '6-7 hours'},
+      {value: '3', name: '7-8 hours'},
+      {value: '4', name: '> 8 hours'},
     ],
     sportTime: [
-      {value: '0', name: '半小时以下'},
-      {value: '1', name: '0.5-1小时'},
-      {value: '2', name: '1-2小时'},
-      {value: '3', name: '2-3小时'},
-      {value: '4', name: '3小时以上'},
+      {value: '0', name: '< 0.5 hours'},
+      {value: '1', name: '0.5-1 hours'},
+      {value: '2', name: '1-2 hours'},
+      {value: '3', name: '2-3 hours'},
+      {value: '4', name: '> 3 hours'},
     ]
   },
   sleepChange:function(e){

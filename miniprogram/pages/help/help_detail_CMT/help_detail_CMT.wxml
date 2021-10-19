@@ -1,26 +1,36 @@
-<!--pages/help/help_datail.wxml-->
-
+<!--index.wxml-->
 <view class="container">
-  <view class="head">
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/coffee_top.png"></image>
+  <view>
+    <image class="image" mode="widthFix" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/igem.png"></image>
   </view>
-</view>
-<view>
-<image class="image" mode="widthFix" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/igem.png"></image>
-</view>
-<view>
--------------------UCAS--------------------
-</view>
-<view>
-<text class="article-text">
-这里是为UCAS-2021团队为coffee子项目内设计的微信小程序，主要作用为记录监测用户咖啡因摄取量，根据用户自身情况设定并灵活调整标准值，依照用户日常作息给出咖啡因摄取量的推荐。
 
+  <view class="competition">
+    <view class="competition-name">
+      <text class="competition-name-text">iGEM introduction</text>
+    </view>
+    <view class="line"></view>
+    <view class="competition-introduction">
+      <text class="competition-introduction-text"></text>
+    </view>
+  </view>
 
-
-
-
-
-
-
-</text>
+  <view class="team">
+    <view class="team-name">
+      <text class="team-name-text">Team:UCAS-China</text>
+    </view>
+    <view class="line"></view>
+    <view class="team-introduction">
+      <text class="team-introduction-text"></text>
+    </view>
+    <view class="team-members"></view>
+  </view>
+  <view class="versions">
+    <image src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/user_1.png"></image>
+    <view class="app-name">Caffein-monitor</view>
+    <view class="version">V 1.1.1</view>
+  </view>
+  <view class="bottom">
+    <navigator class="privacy" url="../privacy_contract/privacy_contract" style="width: 383rpx; height: 214rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">User Agreement and Privacy Policy</navigator>
+    <text class="bottom_text">UCAS-China .All Rights Reserved</text>
+  </view>
 </view>

@@ -2,16 +2,16 @@
   <form action="submit" bindsubmit="onSubmit">
  <!--标题，可能可以配个图-->
     <view class="title">
-      日常习惯填写
+      Daily Habits
      </view>
      <view class="instruction">
-      在本页，我们将会收集一些关于您日常习惯的数据，以便我们的咖啡因算法更好地符合您的个人情况。
+      On this page, we will collect some data about your daily habits so that our caffeine algorithm can be better tailored to your individual situation.
     </view>
  <!--表格主体-->
     <view class="table-body">
       <!--一个问题和其对应的选项-->
       <view class="question">
-        <text> 1.每日睡眠时间</text>
+        <text> 1.Daily sleep time</text>
       </view>
       <view class="optionarea">
         <radio-group class="matters" bindchange="sleepChange">
@@ -23,7 +23,7 @@
     </view>
       <!--一个问题和其对应的选项-->
     <view class="question">
-        2.每日运动时间
+        2.Daily sport time
     </view>
     <view class="optionarea">
       <radio-group class="matters" bindchange="sportChange">
@@ -34,7 +34,7 @@
     </view>
     <!--提交按钮-->
     <view class="Buttom">
-      <button class="submit" form-type="submit">提交</button>
+      <button class="submit" form-type="submit">Submit</button>
     </view>
   </form>
 </view>

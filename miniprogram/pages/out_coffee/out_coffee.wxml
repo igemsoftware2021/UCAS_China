@@ -4,7 +4,7 @@
     <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg"></image>
   </view>
   <view class="recommand-amount">
-    <view class="recommand-amount-time">当前时间：{{time}}</view>
+    <view class="recommand-amount-time">Current Time：{{time}}</view>
     <view class="recommand-amount-text">根据计算推荐您饮用：</view>
     <view class="recommant-amount-num">
       <view class="recommant-amount-num-number">{{amount}}</view>

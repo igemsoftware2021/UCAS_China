@@ -28,13 +28,6 @@ Page({
         figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/bluetooth_inactive.png'
 
       },{
-        id:2,
-        text:'Coffee Drinking Analysis',
-        url:'/pages/history/history',
-        active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/coffee_active.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/coffee_inactive.png'
-      },{
         id:3,
         text:'Habits',
         url:'/pages/routine/routine',

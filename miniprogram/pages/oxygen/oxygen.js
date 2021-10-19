@@ -31,7 +31,7 @@ Page({
       animation: true,
       categories:[ '00:00', '03:00', '06:00', '09:00', '12:00', '15:00', '18:00', '21:00'],
       series: [{
-      name: '血氧饱和度',
+      name: 'Oxygen Saturation',
       data: [ 90, 93, 98, 99, 99 ,96, 95,99],
       format: function (val, name) {
       return val.toFixed( 2) + '%';

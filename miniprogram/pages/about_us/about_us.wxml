@@ -1,16 +1,7 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="figure-scroll">
-    <swiper class="figure-swiper" autoplay="true" circular="true" indicator-dots="true">
-      <navigator wx:for="{{figures}}" wx:key="id" class="image-nav" url="../web_view/web_view?src={{item.url}}">
-        <swiper-item>
-          <view class="image-view">
-            <image src="{{item.src}}" mode="aspectFit" class="image">
-            </image>
-          </view>
-        </swiper-item>
-      </navigator>
-    </swiper>
+  <view>
+    <image class="image" mode="widthFix" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/igem.png"></image>
   </view>
 
   <view class="competition">
@@ -39,7 +30,7 @@
     <view class="version">V 1.1.1</view>
   </view>
   <view class="bottom">
-    <navigator class="privacy" url="../privacy_contract/privacy_contract" style="width: 383rpx; height: 214rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">用户协议及隐私政策</navigator>
-    <text class="bottom_text">Copyright .All Rights Reserved</text>
+    <navigator class="privacy" url="../privacy_contract/privacy_contract" style="width: 383rpx; height: 214rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">User Agreement and Privacy Policy</navigator>
+    <text class="bottom_text">UCAS-China .All Rights Reserved</text>
   </view>
 </view>

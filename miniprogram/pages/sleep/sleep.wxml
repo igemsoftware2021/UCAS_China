@@ -1,3 +1,3 @@
-<canvas canvas-id="pieCanvas" disable-scroll="true" class="pieCanvas" style="width:400px; height:400px;"></canvas>
-<text class="content">睡眠分析样例数据</text>
-<text class="content2">**以上数据由xxx手环提供**</text> 
+<canvas canvas-id="pieCanvas" disable-scroll="true" class="pieCanvas"></canvas>
+<text class="content">SAMPLE DATA of Sleep analysis </text>
+<text class="content2">**The above data is provided by bracelet**</text> 

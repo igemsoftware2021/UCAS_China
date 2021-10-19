@@ -15,6 +15,9 @@ page {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: small;
 }
+.main_text{
+  padding-left: 10%;
+}
 .view1{
   border:6rpx solid lightgrey;
   margin:10rpx;

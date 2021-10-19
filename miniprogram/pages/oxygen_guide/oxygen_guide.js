@@ -1,7 +1,7 @@
 Page({
   jump(){
     wx.navigateTo({
-      url: '/pages/heartrate/heartrate',
+      url: '/pages/oxygen/oxygen',
     })
   },
   nojump(){

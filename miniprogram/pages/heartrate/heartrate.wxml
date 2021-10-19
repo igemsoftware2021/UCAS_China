@@ -1,4 +1,4 @@
 <canvas canvas-id="lineCanvas" disable-scroll="true" class="lineCanvas" style="width:400px; height:400px;"></canvas>
-<text class="content">心率分析样例数据</text>
-<text class="content">心率范围：42-112次/分钟</text>
-<text class="content2">**以上数据由xxx手环提供**</text> 
+<text class="content">SAMPLE DATA of Heartrate</text>
+<text class="content">Heart rate range: 42-112 beats/minute</text>
+<text class="content2">**The above data is provided by bracelet**</text> 

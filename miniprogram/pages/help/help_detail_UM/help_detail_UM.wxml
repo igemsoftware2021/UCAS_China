@@ -5,47 +5,54 @@
     <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/coffee_top.png"></image>
   </view>
 <view>
-<text class="title_1">功能介绍</text>
+<text class="title_1">Introduction</text>
 </view>
 <view class="view1">
 <text class="article-text" user-select="True">
-<text class="text_symbol">>主界面:</text> 
-  数据/评估方法根据您有无登陆选取一般标准/个性化标准，首次打开跳转至login界面
+<text class="text_symbol">>Main Interface:</text> 
+<text class="main_text">
+The data/evaluation method is based on whether you have logged in or not to select the general standard/personalized standard, the first time you open it, you will jump to the login interface.
 
-  可选择不登陆继续使用，但无法获得个性服务，首先是微信登陆，若注册过跳转到主界面，若未注册则需跳转至填写基本信息表单，然后选择是否记录当天作息作为标准
+You can choose not to log in to continue to use, but can not get personalized services, the first is the WeChat login, if registered jump to the main interface, if not registered, you need to jump to fill out the basic information form, and then choose whether to record the day's work and rest as the standard.
 
-  添加咖啡记录，一种可以通过蓝牙/局域网网络等与硬件数据交互，另一种可以选择所喝咖啡
+  Add coffee records, one can interact with the hardware data through Bluetooth / LAN network, etc., and another can choose the coffee drunk.
+</text>
+<text class="text_symbol">> Health:</text>
+<text class="main_text">
+  Connect with hardware to reflect your health through various indicators.
+</text>
 
-  <text class="text_symbol">> 健康:</text>
-   与硬件联系，通过各种指标反映您的健康水平
+<text class="text_symbol">>Personal Center:</text> 
+<text class="main_text">
+  Inside you can view the health/caffeine intake curve.
+</text>
 
-  <text class="text_symbol">>个人中心界面:</text> 
-  内部可以查看健康/咖啡因摄入曲线
 
-<text class="text_symbol">> 历史:</text> 
-查看咖啡因历史摄取详细记录
+<text class="text_symbol">> History:</text> 
+<text class="main_text">
+  View detailed records of historical caffeine intake
+</text>
 
-<text class="text_symbol">> 设置:</text> 
-查看您的基本设置
+<text class="text_symbol">> Settings:</text> 
+<text class="main_text">
+  View your basic settings
+</text>
 
-<text class="text_symbol">> 日常饮用分析:</text> 
-查看生活作息，可更改其中存储数据将作为推荐参考
+<text class="text_symbol">> Daily Drinking Analysis:</text> 
+<text class="main_text">
+  View your daily routine and change the data stored therein to be used as a reference for recommendations
+</text>
 
-<text class="text_symbol">> 帮助:</text> 
-帮助界面，查看使用说明
 
-<text class="text_symbol">> 关于我们:</text> 
-了解开发团队
+<text class="text_symbol">> Help:</text> 
+<text class="main_text">
+  Help page, view instructions for use
+</text>
 
-<text class="text_symbol">> privacy:</text>
-隐私协议          
-
+<text class="text_symbol">> About US:</text> 
+<text class="main_text">
+  Get to know the development team
+</text>
 </text>
 </view>
-</view>
-<view>
-<text class="title_1">祝您使用愉快！</text>
-</view>
-<view>
-  <image class="image" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/coffee.png" mode="widthFix"></image>
 </view>

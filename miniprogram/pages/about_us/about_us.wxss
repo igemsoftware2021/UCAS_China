@@ -57,6 +57,9 @@ page {
   font-size:xx-small;
   position: fixed;
 }
+.bottom_text{
+  margin-bottom: 10%;
+}
 .privacy{
   color:cadetblue;
   text-decoration: underline;

@@ -1,14 +1,30 @@
-<!--pages/help/help_detail2.wxml-->
+<!--index.wxml-->
 <view class="container">
   <view class="head">
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/coffee_top.png"></image>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg"></image>
   </view>
-</view>
-<view class="title">
-<text>
-  Caffein-monitor.1.0------ 暂无更新
-  </text></view>
-<view>
-<image class="image"
-src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/版本信息.png"></image>
+  <view class="competition">
+    <view class="competition-name">
+      <text class="competition-name-text">iGEM introduction</text>
+    </view>
+    <view class="line"></view>
+    <view class="competition-introduction">
+      <text class="competition-introduction-text"></text>
+    </view>
+  </view>
+
+  <view class="team">
+    <view class="team-name">
+      <text class="team-name-text">Team:UCAS-China</text>
+    </view>
+    <view class="line"></view>
+    <view class="team-introduction">
+      <text class="team-introduction-text"></text>
+    </view>
+    <view class="team-members"></view>
+  </view>
+  <view class="versions">
+    <view class="app-name">Caffein-monitor</view>
+    <view class="version">V 1.1.1</view>
+  </view>
 </view>

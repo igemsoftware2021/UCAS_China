@@ -40,7 +40,7 @@ Page({
     currentIndex: 0,
     "firstList": [{ name: '' }],
     "secondList": [{ name: ''}],
-    "thirdList": [{ name: '010-1100-1910' }]},
+    "thirdList": [{ name: '010-88256079' }]},
   
   //用户点击tab时调用
   titleClick: function (e) {

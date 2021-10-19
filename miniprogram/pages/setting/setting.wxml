@@ -1,23 +1,23 @@
 <!--index.wxml-->
 <view class="wrap">
     <view>
-        <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg"></image>
+        <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
     </view>
 
-    <view class="main-title">设置</view>
+    <view class="main-title">Settings</view>
 
 
     <view class='ticket-container'>
       <!--Tab布局-->
       <view class="title1">
         <view class="{{0 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='0'>
-          <text>个人信息</text>
+          <text>Personal Information</text>
           <hr class="line-style"/>
         </view>
       </view>
       <view class="title2">
         <view class="{{1 == currentIndex ? 'title-sel-selected' : 'title-sel'}}" bindtap='titleClick' data-idx='1'>
-          <text>隐私设置</text>
+          <text>Privacy Settings</text>
           <hr class="line-style"/>
         </view>
       </view>
@@ -26,41 +26,69 @@
     <swiper class='swiper' bindchange='pagechange' current='{{currentIndex}}'>
 
     <swiper-item class='swiper'>
-        <view class="name" wx:for="{{info}}" wx:key="id">
+        <view class="name">
             <view class="left">
-                <view>{{item.keys}}</view>
+                <view>Name:</view>
             </view>
             <view class="right">
-                <input class="input"  placeholder="{{item.value}}"/>
+                <input class="input"  placeholder="     Input your name"/>
+            </view>
+        </view>
+        <view class="gender">
+            <view class="left">
+                <view>Gender:</view>
+            </view>
+            <view class="right">
+                <input class="input"  placeholder="   Female/Male"/>
+            </view>
+        </view>
+        <view class="birth">
+            <view class="left">
+                <view>Birthday:</view>
+            </view>
+            <view class="right">
+                <input class="input"  placeholder="     2001.01.01"/>
+            </view>
+        </view>
+        <view class="height">
+            <view class="left">
+                <view>height:</view>
+            </view>
+            <view class="right">
+                <input class="input"  placeholder="     170cm"/>
+            </view>
+        </view>
+        <view class="weight">
+            <view class="left">
+                <view>Weight:</view>
+            </view>
+            <view class="right">
+                <input class="input"  placeholder="     50kg"/>
             </view>
         </view>
         <view class="weui-btn-area">
-          <button class="weui-btn" type="primary" bindtap="submitForm" disabled='{{btn_disabled}}'>保存</button>
+          <button class="weui-btn" type="primary" bindtap="submitForm" disabled='{{btn_disabled}}'>SAVE</button>
         </view>
     </swiper-item>
     <swiper-item class='swiper'>
         <view class="switch-list">
-            <text decode="{{true}}">允许获取个人信息&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <text decode="{{true}}">Access to personal information&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
             <switch class="choice" checked="{{isChecked1}}" bindchange="changeSwitch1" type='switch'/>   
         </view>
         <view class="switch-list">
-            <text decode="{{true}}">允许获取健康数据&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <text decode="{{true}}">Access to Health data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
             <switch class="choice" checked="{{isChecked2}}" bindchange="changeSwitch2" type='switch'/>   
         </view>
         <view class="switch-list">
-            <text decode="{{true}}">同步个人信息到云&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <text decode="{{true}}">Sync personal information to the cloud&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
             <switch class="choice" checked="{{isChecked3}}" bindchange="changeSwitch3" type='switch'/>   
         </view>
-        <view class="switch-list">
-            <text decode="{{true}}">同步健康数据到云&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-            <switch class="choice" checked="{{isChecked4}}" bindchange="changeSwitch4" type='switch'/>   
-        </view>
+
         <view class="weui-btn-area">
-          <button class="weui-btn" type="primary" bindtap="submitForm" disabled='{{btn_disabled}}'>保存</button>
+          <button class="weui-btn" type="primary" bindtap="submitForm" disabled='{{btn_disabled}}'>SAVE</button>
         </view>
     </swiper-item>
     </swiper>
