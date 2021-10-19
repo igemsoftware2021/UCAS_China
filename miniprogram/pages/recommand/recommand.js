@@ -74,8 +74,8 @@ Page({
         hours = 23 - getHours
       }
       this.setData({
-        coffee_bestscale_up: 0.36-0.35*hours/7+0.01,
-        coffee_bestscale_low: 0.36-0.36*hours/7-0.01
+        coffee_bestscale_up: 1-0.35*hours/7+0.01,
+        coffee_bestscale_low: 1-0.36*hours/7-0.01
       })
       console.log(coffee_bestscale_up,coffee_bestscale_low)
     }

@@ -16,7 +16,7 @@
   font-size: larger;
 }
 .description{
-  padding-left: 10%;
+  padding-left: 3%;
 }
 .choices{
   font:bold;

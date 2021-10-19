@@ -1,3 +1,4 @@
+<wxs module="filters" src="../../utils/addmul.wxs"></wxs>
 <view class="container">
   <view>
     <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg"></image>
@@ -9,7 +10,8 @@
       <text class="num-text-text">Current optimal range of coffee intake: </text>
     </view>
     <view class="num-number">
-      <text class="num-number-text">{{coffee_bestscale_low}}~{{coffee_bestscale_up}}</text>
+      <text class="num-number-text">{{filters.toFix2(coffee_bestscale_low)}}~{{filters.toFix2(coffee_bestscale_up)}}</text>
+      
     </view>
   </view>
 
