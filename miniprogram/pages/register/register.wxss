@@ -4,3 +4,20 @@
   display: flex;
   flex-direction: row;
 }
+.name-welcome{
+  font: bold;
+  text-align: center;
+  color: gray;
+}
+.title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position:left;
+  font-weight: bold;
+  font-size: larger;
+}
+.description{
+  padding-left: 10%;
+}
+.choices{
+  font:bold;
+}

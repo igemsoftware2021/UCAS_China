@@ -13,37 +13,39 @@ Page({
     form_content: [{
         index: 0,
         prop: 'height',
-        title: '身高',
-        placeholder: '请输入身高（省略单位：cm）'
+        title: 'Height',
+        placeholder: '  Please enter your height (unit: cm)'
       },
       {
         index: 1,
         prop: 'weight',
-        title: '体重',
-        placeholder: '请输入体重（省略单位：kg）'
+        title: 'Weight',
+        placeholder: '  Please enter weight (unit: kg)'
       },
       {
         index: 2,
         prop: 'age',
-        title: '年龄',
-        placeholder: '请输入年龄（省略单位：岁）'
+        title: 'Age',
+        placeholder: '  Please enter age (years old)'
       }
     ],
-    people: ['黄种人', '白种人', '黑种人', '其他'],
-    peopleIndex: 0,
+ 
     gender: [{
       value: 0,
-      name: '男'
+      name: 'Male'
     }, {
       value: 1,
-      name: '女'
+      name: 'Famle'
+    }, {
+      value: 2,
+      name: 'Unspecified'
     }],
     liver: [{
       value: 0,
-      name: '有'
+      name: 'Yes'
     }, {
       value: 1,
-      name: '无'
+      name: 'No'
     }],
     liver_fill: 0,
     cigarette: 0,
@@ -53,25 +55,25 @@ Page({
     showTopTips: false,
     rules: [{
         name: 'height',
-        rules: {required: true, message: '身高是必选项'},
+        rules: {required: true, message: 'Height is a must choice'},
     }, {
         name: 'weight',
-        rules: {required: true, message: '体重是必选项'},
+        rules: {required: true, message: 'Wight is a must choice'},
     }, {
         name: 'age',
-        rules: {required: true, message: '年龄是必选项'},
+        rules: {required: true, message: 'Age is a must choice'},
     }, {
         name: 'gender',
-        rules: {required: true, message: '性别是必选项'},
+        rules: {required: true, message: 'Gender is a must choice'},
     }, {
         name: 'liver',
-        rules: {required: true, message: '肝脏疾病是必选项'},
+        rules: {required: true, message: 'Liver disease is a must choice'},
     }, {
         name: 'cigaratte',
-        rules: {required: false, message: '吸烟频繁程度选填'},
+        rules: {required: false, message: 'Cigaratte is a must choice'},
     }, {
         name: 'agree',
-        rules: {required: true, message: '请勾选同意隐私政策'},
+        rules: {required: true, message: 'You must agree'},
     }],
     btn_disabled:true,
   },

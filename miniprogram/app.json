@@ -59,7 +59,7 @@
         "selectedIconPath": "/images/tabbar/health_active.png"
       },
       {
-        "text": "Personal Center",
+        "text": "Help",
         "pagePath": "pages/home/home",
         "iconPath": "/images/tabbar/person_inactive.png",
         "selectedIconPath": "/images/tabbar/person_active.png"

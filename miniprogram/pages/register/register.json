@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "注册界面",
+  "navigationBarTitleText": "Register",
   "usingComponents": {
     "mp-toptips": "weui-miniprogram/toptips/toptips",
     "mp-form-page": "weui-miniprogram/form-page/form-page",
