@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+    <script src="assets/swiper-bundle.min.js"></script>
+
+    <title>iGEM Online | Online Education Platform for iGEM</title>
+    <style>
+        /*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+        @font-face {
+            font-family: Brandon;
+            src: url('media/Brandon.ttf');
+        }
+
+        @font-face {
+            font-family: Brandon-shadow;
+            src: url('media/Brandon-shadow.ttf');
+        }
+
+        @font-face {
+            font-family: Calibri;
+            src: url('media/calibri.ttf');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #top-bar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: distribute;
+            justify-content: space-around;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10vh;
+            background-color: rgb(245, 245, 245);
+            -webkit-box-shadow: 16px 0 13px 8px #777;
+            box-shadow: 16px 0 13px 8px #777;
+            z-index: 100;
+        }
+
+        #top-bar img {
+            height: 90%;
+        }
+
+        .top-menu a {
+            color: black;
+            font-family: Brandon;
+            font-size: 1.8em;
+            text-decoration: none;
+        }
+
+        .top-menu a:hover {
+            font-family: Brandon-shadow;
+        }
+
+        .top-menu a::after {
+            content: '';
+            display: block;
+            background-color: #FC8C42;
+            width: 0%;
+            height: 6px;
+            margin-left: 50%;
+            margin-top: -3px;
+            -webkit-transition: all 200ms;
+            -o-transition: all 200ms;
+            transition: all 200ms;
+        }
+
+        .top-menu a:hover::after {
+            width: 110%;
+            margin-left: -5%;
+        }
+
+        .class-panel {
+            display: none;
+            position: absolute;
+            width: auto;
+            max-height: 40vh;
+            top: calc(10vh - 1.5em);
+            padding: 1.4em 2.1em;
+            border-radius: 4px;
+            -webkit-box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 12%);
+            box-shadow: 0px 0px 10px 1px rgb(0 0 0 / 12%);
+            background-color: #fff;
+            overflow-y: auto;
+        }
+
+        .class-panel-head {
+            font-size: 1em;
+            color: #333333;
+        }
+
+        .class-panel-items {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .class-panel-item {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0.3em 1em;
+            margin: 0.4em 0.6em;
+            border-radius: 1em;
+            font-size: 0.9em;
+            color: #333333;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.04);
+            cursor: pointer;
+            -webkit-transition: background-color 100ms ease-in-out;
+            -o-transition: background-color 100ms ease-in-out;
+            transition: background-color 100ms ease-in-out;
+        }
+
+        .class-panel-item:hover {
+            background-color: #777;
+            color: white;
+        }
+
+
+        .keyword {
+            height: 1.8em;
+            padding: 0 0.6em;
+        }
+
+        .submit {
+            margin-left: 1em;
+            padding: 0.1em 1em;
+            height: 2.2em;
+        }
+
+        #top-log a {
+            margin: 0 0.6em;
+            color: black;
+            text-decoration: none;
+            font-family: Calibri;
+            font-size: 1.3em;
+        }
+
+        #top-log a:hover {
+            text-decoration: underline;
+        }
+
+        #left-content {
+            float: left;
+            margin-top: 10vh;
+            margin-left: 6%;
+            padding-bottom: 6vh;
+            width: 52%;
+            z-index: 90;
+        }
+
+        .swiper-container {
+            width: 99%;
+            margin: 5vh auto 0 auto;
+            -webkit-box-shadow: 8px 8px 20px 2px #999;
+            box-shadow: 8px 8px 20px 2px #999;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+
+        #prize-recom {
+            border: 6px double rgba(150, 150, 150, 0.6);
+            margin-top: 5vh;
+            padding: 4vh 0;
+        }
+
+        #prize-recom span {
+            display: inline-block;
+            width: 100%;
+            font-family: Brandon;
+            text-align: center;
+            font-size: 1.6em;
+        }
+
+        #prize-recom ul {
+            margin: 1.6vh 4em;
+            font-family: calibri;
+            font-size: 1.2em;
+        }
+
+        #right-content {
+            float: right;
+            margin-top: 10vh;
+            margin-right: 4%;
+            padding-bottom: 6vh;
+            width: 30%;
+            z-index: 90;
+        }
+
+        #user-info {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: 5vh;
+            width: 100%;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            font-family: calibri;
+        }
+
+        #user-info img {
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        #user-info table {
+            margin-top: 1em;
+        }
+
+        #user-info td {
+            padding: 0.1em 0.8em;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #user-info span {
+            text-align: center;
+            margin-top: 1.4em;
+            margin-bottom: 0.2em;
+            font-size: 1.6em;
+            font-family: Brandon !important;
+        }
+
+        #user-info ul {
+            font-size: 1.3em;
+            list-style: circle;
+        }
+
+        #coop-schools {
+            margin-top: 8vh;
+            padding-top: 2vh;
+            width: 100%;
+            border-top: 1px solid #333;
+        }
+
+        #coop-schools span {
+            display: inline-block;
+            width: 100%;
+            font-family: Brandon;
+            font-size: 1.6em;
+            text-align: center;
+        }
+
+        #coop-schools ul {
+            margin: 1.1em 2em;
+            list-style: none;
+            text-align: center;
+            font-family: calibri;
+            font-size: 1.3em;
+            line-height: 150%;
+        }
+
+        #footer {
+            float: left;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 14vh;
+            background-color: rgb(245, 245, 245);
+            -webkit-box-shadow: 0 0 13px 8px #fff inset;
+            box-shadow: 0 0 13px 8px #fff inset;
+        }
+
+        #footer img {
+            height: calc(96% - 16px);
+            width: auto;
+        }
+
+        #footer span {
+            font-size: 1.4em;
+        }
+
+        #footer a {
+            color: black;
+            font-size: 1em;
+            text-decoration: none;
+        }
+
+        #footer a:hover {
+            color: purple;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top-bar">
+        <img src="media/logoB.png" alt="UCAS-China" />
+        <div class="top-menu"><a href="">Home</a></div>
+        <div class="top-menu" id="curricula"><a href="">Curricula</a>
+            <div class="class-panel" id="panel">
+                <section class="class-panel-section">
+                    <h5 class="class-panel-head">Biology Theories</h5>
+                    <div class="class-panel-items">
+                        <div class="class-panel-item">
+                            <p>Cellular Biology</p>
+                        </div>
+                        <div class="class-panel-item">
+                            <p>Synthetic Biology</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="class-panel-section">
+                    <h5 class="class-panel-head">Experiments</h5>
+                    <div class="class-panel-items">
+                        <div class="class-panel-item">
+                            <p>Basic Operations</p>
+                        </div>
+                        <div class="class-panel-item">
+                            <p>Experiments in Synthetic Biology</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="class-panel-section">
+                    <h5 class="class-panel-head">Hardware</h5>
+                    <div class="class-panel-items">
+                        <div class="class-panel-item">
+                            <p>Hardware Courses</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="class-panel-section">
+                    <h5 class="class-panel-head">Software</h5>
+                    <div class="class-panel-items">
+                        <div class="class-panel-item">
+                            <p>Introduction to Python Programming</p>
+                        </div>
+                        <div class="class-panel-item">
+                            <p>Programming in Biology</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="class-panel-section">
+                    <h5 class="class-panel-head">Designing</h5>
+                    <div class="class-panel-items">
+                        <div class="class-panel-item">
+                            <p>Webpage Design</p>
+                        </div>
+                        <div class="class-panel-item">
+                            <p>Graphic Design</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="top-menu"><a href="">Schools</a></div>
+        <div class="top-menu"><a href="">Me</a></div>
+        <div id="top-search">
+            <form action="search.php" method="get">
+                <input class="keyword" type="text" name="keyword" placeholder="search any content..." />
+                <input class="submit" type="submit" name="submit" value="Search" />
+            </form>
+        </div>
+        <div id="top-log">
+            <a href="">Login</a>|<a href="">Sign Up</a>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        }
+        document.querySelector('#curricula').onmouseover = function () {
+            document.querySelector('#panel').style.display = 'block';
+        }
+        document.querySelector('#curricula').onmouseout = function () {
+            document.querySelector('#panel').style.display = 'none';
+        }
+    </script>
+    <div id="left-content">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="media/hcs.jpg" /></div>
+                <div class="swiper-slide"><img src="media/hcs.jpg" /></div>
+                <div class="swiper-slide"><img src="media/hcs.jpg" /></div>
+                <div class="swiper-slide"><img src="media/hcs.jpg" /></div>
+                <div class="swiper-slide"><img src="media/hcs.jpg" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div id="prize-recom">
+            <span>Previous Prizes</span>
+            <ul>
+                <li><b>Flavoflow</b>. Team: Vilnius-Lithuania</li>
+                <li><b>A coculture for food supplements production in space</b>. Team: Toulouse_INSA-UPS</li>
+                <li><b>AnTea Glyphosate</b>. Team: XMU-China</li>
+            </ul>
+        </div>
+    </div>
+    <div id="right-content">
+        <div id="user-info">
+            <img src="media/profile.jpg" alt="">
+            <table border="0" cellspacing="0">
+                <tr>
+                    <td style="border-bottom: 1.5px solid #222;">Learnt</td>
+                    <td style="border-bottom: 1.5px solid #222;">Learning</td>
+                </tr>
+                <tr>
+                    <td>1.2h</td>
+                    <td>Python</td>
+                </tr>
+            </table>
+            <span>Recent Courses</span>
+            <ul>
+                <li>Introduction to Python Programming</li>
+                <li>Synthetic Biology</li>
+            </ul>
+        </div>
+        <div id="coop-schools">
+            <span>Partner Schools</span>
+            <ul>
+                <li>CPU-China</li>
+                <li>HUST-China</li>
+                <li>HUST2-China</li>
+                <li>BIT-China</li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="footer">
+        <img src="media/logoB.png" alt="">
+        <span><span style="font-family: Brandon;;">iGEM Online: </span><span style="font-family: calibri;"> Online
+                Education Platform for iGEM</span>
+        </span>
+        <span><a href="">Join us</a> | <a href="mailto:liuyuchen20a@mails.ucas.ac.cn">Contact us</a></span>
+    </div>
+</body>
+
+</html>
