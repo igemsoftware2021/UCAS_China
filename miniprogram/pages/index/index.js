@@ -4,7 +4,7 @@ const app = getApp()
 Page({
   data: {
     showActionsheet: true,
-    avatarUrl: './user-unlogin.png',
+    avatarUrl: './user-unlogin.png?raw=true',
     userInfo: {},
     hasUserInfo: false,
     logged: false,
@@ -14,23 +14,23 @@ Page({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl'), // 如需尝试获取用户信息可改为false
     list: [{
       "text": "推荐",
-      "iconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/coffee_inactive.png",
-      "selectedIconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/coffee_active.png",
+      "iconPath": "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/tabbar/coffee_inactive.png?raw=true",
+      "selectedIconPath": "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/tabbar/coffee_active.png?raw=true",
       /*dot: true*/
     },
     {
       "text": "记录",
-      "iconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/record_inactive.png",
-      "selectedIconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/record_active.png",
+      "iconPath": "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/tabbar/record_inactive.png?raw=true",
+      "selectedIconPath": "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/tabbar/record_active.png?raw=true",
       /*badge: 'New'*/
     },
     {
       "text": "个人中心",
-      "iconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/person_inactive.png",
-      "selectedIconPath": "../http://whatcanyousee.gearhostpreview.com/iGem-software/images/tabbar/person_active.png",
+      "iconPath": "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/tabbar/person_inactive.png?raw=true",
+      "selectedIconPath": "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/tabbar/person_active.png?raw=true",
       /*badge: 'New'*/
     }],
-    src:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg",
+    src:"https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/topimage/cafe.jpeg?raw=true",
     openid:'',
     session:'',
     indatabase:false,
@@ -38,28 +38,28 @@ Page({
     stars:[
       {
         flag:1,
-        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
-        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
+        bgImg: "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_inactive.png?raw=true",
+        bgfImg:"https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_active.png?raw=true"
       },
       {
         flag:1,
-        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
-        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
+        bgImg: "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_inactive.png?raw=true",
+        bgfImg:"https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_active.png?raw=true"
       },
       {
         flag:1,
-        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
-        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
+        bgImg: "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_inactive.png?raw=true",
+        bgfImg:"https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_active.png?raw=true"
       },
       {
         flag:1,
-        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
-        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
+        bgImg: "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_inactive.png?raw=true",
+        bgfImg:"https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_active.png?raw=true"
       },
       {
         flag:1,
-        bgImg: "http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_inactive.png",
-        bgfImg:"http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/stars_active.png"
+        bgImg: "https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_inactive.png?raw=true",
+        bgfImg:"https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/stars_active.png?raw=true"
       },
     ],
     recom_amount:0

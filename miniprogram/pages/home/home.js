@@ -3,7 +3,7 @@ const app = getApp()
 
 Page({
   data: {
-    avatarUrl: './user-unlogin.png',
+    avatarUrl: './user-unlogin.png?raw=true',
     userInfo: {},
     hasUserInfo: false,
     logged: false,
@@ -17,44 +17,44 @@ Page({
         text:'Setting',
         url:'/pages/setting/setting',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/setting_active.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/setting_inactive.png'
+        figure_active:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/setting_active.png?raw=true',
+        figure_inactive:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/setting_inactive.png?raw=true'
       },{
         id:1,
         text:'Bluetooth',
         url:'/pages/bluetooth/bluetooth',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/bluetooth_active.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/bluetooth_inactive.png'
+        figure_active:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/bluetooth_active.png?raw=true',
+        figure_inactive:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/bluetooth_inactive.png?raw=true'
 
       },{
         id:3,
         text:'Habits',
         url:'/pages/routine/routine',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/custom_active.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/custom_inactive.png'
+        figure_active:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/custom_active.png?raw=true',
+        figure_inactive:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/custom_inactive.png?raw=true'
       },{
         id:4,
         text:'Help',
         url:'/pages/help/help',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/help_active.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/help_inactive.png'
+        figure_active:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/help_active.png?raw=true',
+        figure_inactive:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/help_inactive.png?raw=true'
       },{
         id:5,
         text:'About us',
         url:'/pages/about_us/about_us',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/about_active.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/about_inactive.png'
+        figure_active:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/about_active.png?raw=true',
+        figure_inactive:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/about_inactive.png?raw=true'
       },{
         id:6,
         text:'Rating and Feedback',
         url:'/pages/feedback/feedback',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/feedback_active.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/feedback_inactive.png'
+        figure_active:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/feedback_active.png?raw=true',
+        figure_inactive:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/feedback_inactive.png?raw=true'
       }
       ]
   },

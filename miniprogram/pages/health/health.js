@@ -3,7 +3,7 @@ const app = getApp()
 Page({
 
   data: {
-    avatarUrl: './user-unlogin.png',
+    avatarUrl: './user-unlogin.png?raw=true',
     userInfo: {},
     hasUserInfo: false,
     logged: false,
@@ -17,22 +17,22 @@ Page({
         text:'Sleep',
         url:'/pages/sleep_guide/sleep_guide',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/sleep.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/sleep.png'
+        figure_active:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/health/sleep.png?raw=true',
+        figure_inactive:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/health/sleep.png?raw=true'
       },{
         id:1,
         text:'HeartRate',
         url:'/pages/heartrate_guide/heartrate_guide',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/heartrate.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/heartrate.png'
+        figure_active:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/health/heartrate.png?raw=true',
+        figure_inactive:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/health/heartrate.png?raw=true'
       },{
         id:2,
         text:'Oxygen Saturation',
         url:'/pages/oxygen_guide/oxygen_guide',
         active:0,
-        figure_active:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/oxygen.png',
-        figure_inactive:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/health/oxygen.png'
+        figure_active:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/health/oxygen.png?raw=true',
+        figure_inactive:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/health/oxygen.png?raw=true'
       }
       ]
   },

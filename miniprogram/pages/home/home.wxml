@@ -1,7 +1,7 @@
 <!--home.wxml-->
 <view class="container">
   <view>
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/topimage/cafe.jpeg"></image>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/topimage/cafe.jpeg?raw=true"></image>
   </view>
 
   <!--个人表面信息-->

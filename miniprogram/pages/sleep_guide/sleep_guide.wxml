@@ -1,6 +1,6 @@
 <view class="container">
   <view>
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="../../images/topimage/cafe.jpeg"></image>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/topimage/cafe.jpeg?raw=true"></image>
   </view>
   <text class="info">If you have a bracelet supported by this app, please click the following button, we will analyze your sleep quality based on the bracelet data</text>
   <button class='button' bindtap='jump'>I have the bracelet</button>

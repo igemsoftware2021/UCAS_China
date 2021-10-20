@@ -65,7 +65,7 @@
       ></input>
 
       <image 
-        src="./photo.png" 
+        src="./photo.png?raw=true" 
         class="btn-send-image" 
         mode="scaleToFill"
         bindtap="onChooseImage"

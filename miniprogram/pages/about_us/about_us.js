@@ -2,7 +2,7 @@ const app = getApp()
 
 Page({
   data: {
-    avatarUrl: './user-unlogin.png',
+    avatarUrl: './user-unlogin.png?raw=true',
     userInfo: {},
     hasUserInfo: false,
     logged: false,
@@ -13,12 +13,12 @@ Page({
     figures:[
       {
         id:0,
-        src:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/about/igem.jpeg',
+        src:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/about/igem.jpeg?raw=true',
         url:'https://2021.igem.org/Main_Page'
       },
       {
         id:1,
-        src:'http://whatcanyousee.gearhostpreview.com/iGem-software/images/about/ucas.jpeg',
+        src:'https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/about/ucas.jpeg?raw=true',
         url:'https://2021.igem.org/Team:UCAS-China'
       }
     ]

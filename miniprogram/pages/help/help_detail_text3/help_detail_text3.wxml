@@ -1,7 +1,7 @@
 <!--pages/help/help_detail5.wxml-->
 <view class="container">
   <view class="head">
-    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/coffee_top.png"></image>
+    <image style="width: 100vw; height: 80px; background-color: #eeeeee;" mode="aspectFill" src="https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/help_coffee_detail_images/coffee_top.png?raw=true"></image>
   </view>
 </view>
 
@@ -34,7 +34,7 @@
    <view class="article-text">
     ② 最适合饮用防弹咖啡的时间是每天早晨。
 </view>
-<image class="image" mode="widthFix" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/text3.1.png"></image>
+<image class="image" mode="widthFix" src="https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/help_coffee_detail_images/text3.1.png?raw=true"></image>
     <text  class="article-content">
       用防弹咖啡作为早餐，能够帮助你从低效率的糖代谢方式逐步转换为高效的脂肪代谢方式。减脂的同时，提高大脑专注力。
 
@@ -57,7 +57,7 @@
 <view class="article-text">
   ④ 日常饮食，应该遵循「高脂肪、充足蛋白质、低碳水化合物」的饮食结构。
 </view>
-<image class="image" mode="widthFix" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/for txt(3).png"></image>
+<image class="image" mode="widthFix" src="https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/help_coffee_detail_images/for txt(3).png?raw=true"></image>
 
 <text class="article-content">
   除了饮用防弹咖啡之外，日常吃的食物，应该以肉类和蔬菜为主，尽量不吃或者少吃谷物、豆类等碳水化合物含量高的食物。碳水化合物的过多摄入会极大地影响你减脂的效果。

@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
   <view>
-    <image class="image" mode="widthFix" src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/help_coffee_detail_images/igem.png"></image>
+    <image class="image" mode="widthFix" src="https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/help_coffee_detail_images/igem.png?raw=true"></image>
   </view>
 
   <view class="competition">
@@ -25,7 +25,7 @@
     <view class="team-members"></view>
   </view>
   <view class="versions">
-    <image src="http://whatcanyousee.gearhostpreview.com/iGem-software/images/home/user_1.png"></image>
+    <image src="https://github.com/ETOgaosion/iGEM-Software/blob/main/we_app/images/home/user_1.png?raw=true"></image>
     <view class="app-name">Caffein-monitor</view>
     <view class="version">V 1.1.1</view>
   </view>

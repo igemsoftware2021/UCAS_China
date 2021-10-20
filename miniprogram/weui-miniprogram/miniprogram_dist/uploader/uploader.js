@@ -231,7 +231,7 @@ Component({
           const files = res.tempFilePaths.map((item, i) => ({
             loading: true,
             // @ts-ignore
-            url: res.tempFilePaths[i] || `data:image/jpg;base64,${wx.arrayBufferToBase64(contents[i])}`
+            url: res.tempFilePaths[i] || `data:image/jpg?raw=true;base64,${wx.arrayBufferToBase64(contents[i])}`
           }));
           if (!files || !files.length) return;
 
