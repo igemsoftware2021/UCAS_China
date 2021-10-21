@@ -39,20 +39,20 @@ Page({
       success: function (res) {
         // that.say(res)
         wx.showToast({
-          title: '打开适配器接口成功',
+          title: 'The adapter interface was opened successfully',
           icon: 'success',
           duration: 800
         })
         that.findBlue();//2.0
-        that.say('打开适配器接口成功')
+        that.say('The adapter interface was opened successfully')
       },
       fail: function (res) {//如果手机上的蓝牙没有打开，可以提醒用户
         wx.showToast({
-          title: '请开启蓝牙',
+          title: 'Please turn on Bluetooth',
           icon: 'fails',
           duration: 1000
         })
-        that.say('请开启蓝牙')
+        that.say('Please turn on Bluetooth')
       }
     })
   },
@@ -63,16 +63,16 @@ Page({
       interval: 0,
       success: function (res) {   
         wx.showLoading({
-          title: '正在搜索设备',
+          title: 'Searching device',
         })
-        that.say('正在搜索设备')
+        that.say('Searching device')
         that.getBlue()//3.0
       }
     })
   },
   getBlue(){
     this.setData({consoleLog:[]})
-    this.say('调用getBlue                   ')
+    this.say('Call getBlue                   ')
     var that = this
     wx.getBluetoothDevices({
       success: function(res) {
@@ -84,7 +84,7 @@ Page({
           if (res.devices[i].name == that.data.cupName || res.devices[i].localName == that.data.cupName){
             that.setData({
               deviceId: res.devices[i].deviceId,//这里deviceID是什么？？？
-              myDevice: "设备：" + res.devices[i].deviceId,
+              myDevice: "Device：" + res.devices[i].deviceId,
             })
            
             that.say('OKKKKK!!!!')
@@ -98,7 +98,7 @@ Page({
         }
       },
       fail: function(){
-        that.say("搜索蓝牙设备失败")
+        that.say("Search bluetooth device failed")
       }
     })
   },
@@ -112,14 +112,14 @@ Page({
       deviceId: deviceId,//设备id
       success: function (res) {
         wx.showToast({
-          title: '连接成功',
+          title: 'Connect Successfully',
           icon: 'success',
           duration: 800
         })
-        that.say("连接蓝牙成功!")
+        that.say("Connect Successfully!")
         wx.stopBluetoothDevicesDiscovery({
           success: function (res) {
-            that.say('连接蓝牙成功之后关闭蓝牙搜索');
+            that.say('Turn off Bluetooth search after a successful Bluetooth connection');
           }
         })
         that.getServiceId()//5.0
@@ -234,13 +234,13 @@ Page({
       // 这里的value是ArrayBuffer类型
       value: buffer,
       success: function (res) {
-        that.say("写入成功")
+        that.say("Write successfully")
       },
       fail: function () {
-        that.say('写入失败')
+        that.say('Write failed')
       },
       complete:function(){
-        that.say("调用结束");
+        that.say("Call end");
       }
     })
   },
