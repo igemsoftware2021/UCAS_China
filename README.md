@@ -82,7 +82,9 @@ So far, we have now completed the design of the platform's structure and user in
 
 Besides, we welcome any valuable suggestions related to the platform. UCAS-China welcomes any collaboration to render the idea of education sharing a reality.
 
+### Usage
 
+This uploaded version provides a graphic overview for the online education platform. Click `Online_Edu_Platform/home.html`  to preview the home page of the project.
 
 
 
